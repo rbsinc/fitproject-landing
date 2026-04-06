@@ -23,6 +23,25 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 
+  <!-- hreflang for i18n SEO -->
+  <link rel="alternate" hreflang="en" href="https://fitproject.app/">
+  <link rel="alternate" hreflang="es" href="https://fitproject.app/?lang=es">
+  <link rel="alternate" hreflang="pt" href="https://fitproject.app/?lang=pt">
+  <link rel="alternate" hreflang="fr" href="https://fitproject.app/?lang=fr">
+  <link rel="alternate" hreflang="de" href="https://fitproject.app/?lang=de">
+  <link rel="alternate" hreflang="x-default" href="https://fitproject.app/">
+
+  <!-- FOUC prevention: hide body until translations are applied for non-English -->
+  <script>
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      var lang = params.get('lang');
+      if (lang && lang !== 'en') {
+        document.documentElement.classList.add('i18n-loading');
+      }
+    })();
+  </script>
+
   <!-- JSON-LD: SoftwareApplication -->
   <script type="application/ld+json">
   {
@@ -36,7 +55,7 @@
       "price": "0",
       "priceCurrency": "USD"
     },
-    "description": "Fit Project is a free, privacy-first workout logger with AI-powered smart workout generation. It creates personalized workout routines based on your profile, equipment, goals, and training history. Features include workout logging with sets, reps, and weight tracking, weekly streak tracking, exercise progress charts with strength curves, smart rotation scheduling, reps-in-reserve tracking, equipment configuration, and custom workout templates. Free to use. No subscription required. Your data is never sold.",
+    "description": "Fit Project is a free, privacy-first workout logger with AI-powered smart workout generation. It creates personalized workout routines based on your profile, equipment, goals, and training history. Features include workout logging with sets, reps, and weight tracking, weekly streak tracking, exercise progress charts with strength curves, smart rotation scheduling, reps-in-reserve tracking, equipment configuration, and custom workout templates. No subscription required. No ads. No data collection.",
     "featureList": [
       "Free workout logging with sets, reps, and weight",
       "AI-generated workouts based on profile and training history",
@@ -46,7 +65,7 @@
       "Equipment configuration for personalized exercises",
       "Custom workout templates",
       "Weekly streak and progress tracking",
-      "Privacy-first — your data is never sold or shared",
+      "Privacy-first — no data selling, no tracking, no ads",
       "Available on iOS and Android"
     ]
   }
@@ -63,7 +82,7 @@
         "name": "Is Fit Project really free?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Fit Project is free to use. There is no subscription required to access any current features. It was built as a passion project by a developer who was tired of paying $15-30 per month just to log workouts. The core workout logging and smart generation features are free."
+          "text": "Yes. Fit Project is completely free to use with no subscription, no premium tier, no in-app purchases, and no ads. It was built as a personal project by a developer who was tired of paying $15-30 per month just to log workouts."
         }
       },
       {
@@ -95,7 +114,7 @@
         "name": "Is my workout data private in Fit Project?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Fit Project is privacy-first. Your workout data is never sold to advertisers or shared with third parties. Your fitness journey is personal and stays that way."
+          "text": "Yes. Fit Project is privacy-first. Your workout data is not sold to advertisers, shared with third parties, or used for tracking. There are no ads in the app. Your fitness journey is personal and stays that way."
         }
       },
       {
@@ -140,6 +159,7 @@
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    html.i18n-loading body { opacity: 0; }
 
     body {
       font-family: var(--font-main);
@@ -147,6 +167,7 @@
       color: var(--white);
       line-height: 1.6;
       overflow-x: hidden;
+      transition: opacity 0.15s ease;
     }
 
     /* NAV */
@@ -177,6 +198,41 @@
       font-weight: 500; transition: color 0.2s;
     }
     .nav-links a:hover { color: var(--white); }
+
+    /* LANGUAGE SWITCHER */
+    .lang-switcher {
+      position: relative;
+    }
+    .lang-btn {
+      display: flex; align-items: center; gap: 6px;
+      background: var(--bg-surface); border: 1px solid var(--gray-700);
+      color: var(--gray-300); padding: 7px 14px; border-radius: 8px;
+      font-size: 0.82rem; font-weight: 600; cursor: pointer;
+      font-family: var(--font-main); transition: all 0.2s;
+      letter-spacing: 0.03em;
+    }
+    .lang-btn:hover { border-color: var(--gray-500); color: var(--white); }
+    .lang-btn svg { width: 12px; height: 12px; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      position: absolute; top: calc(100% + 6px); right: 0;
+      background: var(--bg-card); border: 1px solid var(--gray-700);
+      border-radius: 10px; padding: 6px; min-width: 150px;
+      opacity: 0; visibility: hidden; transform: translateY(-4px);
+      transition: all 0.2s ease;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.4);
+    }
+    .lang-switcher.open .lang-dropdown {
+      opacity: 1; visibility: visible; transform: translateY(0);
+    }
+    .lang-option {
+      display: block; width: 100%; text-align: left;
+      background: none; border: none; color: var(--gray-300);
+      padding: 8px 12px; border-radius: 6px; font-size: 0.85rem;
+      font-family: var(--font-main); cursor: pointer; transition: all 0.15s;
+    }
+    .lang-option:hover { background: var(--bg-surface); color: var(--white); }
+    .lang-option.active { color: var(--blue-bright); }
 
     .btn-primary {
       display: inline-flex; align-items: center; gap: 8px;
@@ -239,7 +295,7 @@
       animation: fadeUp 0.7s ease 0.1s both;
     }
 
-    h1 .highlight {
+    .highlight {
       background: linear-gradient(135deg, var(--blue-bright), #818cf8);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     }
@@ -545,24 +601,37 @@
     Fit Project
   </a>
   <div class="nav-links">
-    <a href="#features">Features</a>
-    <a href="#how">How it works</a>
-    <a href="#faq">FAQ</a>
-    <a href="#download" class="btn-primary" style="padding: 10px 22px; font-size: 0.85rem;">Get the App</a>
+    <a href="#features" data-i18n="nav.features">Features</a>
+    <a href="#how" data-i18n="nav.how">How it works</a>
+    <a href="#faq" data-i18n="nav.faq">FAQ</a>
+    <a href="#download" class="btn-primary" style="padding: 10px 22px; font-size: 0.85rem;" data-i18n="nav.cta">Get the App</a>
+  </div>
+  <div class="lang-switcher">
+    <button class="lang-btn" aria-label="Select language">
+      <span class="lang-current">EN</span>
+      <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 4.5l3 3 3-3"/></svg>
+    </button>
+    <div class="lang-dropdown">
+      <button class="lang-option active" data-lang="en">English</button>
+      <button class="lang-option" data-lang="es">Español</button>
+      <button class="lang-option" data-lang="pt">Português</button>
+      <button class="lang-option" data-lang="fr">Français</button>
+      <button class="lang-option" data-lang="de">Deutsch</button>
+    </div>
   </div>
 </nav>
 
 <header class="hero">
   <div class="hero-content">
-    <div class="hero-badge"><span class="dot"></span> Coming soon on iOS & Android</div>
-    <h1>Your fitness.<br>Your <span class="highlight">project</span>.</h1>
-    <p class="hero-sub">A free workout logger with AI-powered smart routine generation. Log sets, track progress, and get personalized workouts based on your history. No subscription. No data selling. Built by someone who actually uses it.</p>
+    <div class="hero-badge"><span class="dot"></span> <span data-i18n="hero.badge">Coming soon on iOS & Android</span></div>
+    <h1 data-i18n-html="hero.title">Your fitness.<br>Your <span class="highlight">project</span>.</h1>
+    <p class="hero-sub" data-i18n="hero.sub">A free workout logger with AI-powered smart routine generation. Log sets, track progress, and get personalized workouts based on your history. No subscription. No data selling. Built by someone who actually uses it.</p>
     <div class="hero-cta">
       <a href="#download" class="btn-primary">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Download Free
+        <span data-i18n="hero.cta_download">Download Free</span>
       </a>
-      <a href="#features" class="btn-outline">See features</a>
+      <a href="#features" class="btn-outline" data-i18n="hero.cta_features">See features</a>
     </div>
   </div>
 
@@ -638,150 +707,151 @@
   <div class="trust-items">
     <div class="trust-item">
       <div class="trust-icon blue"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-      Privacy-first — your data stays yours
+      <span data-i18n="trust.privacy">Privacy-first — your data stays yours</span>
     </div>
     <div class="trust-item">
       <div class="trust-icon green"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
-      Free to use — no subscription required
+      <span data-i18n="trust.free">Free to use — no subscription required</span>
     </div>
     <div class="trust-item">
       <div class="trust-icon blue"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-      Smart AI routines from your training history
+      <span data-i18n="trust.ai">Smart AI routines from your training history</span>
     </div>
   </div>
 </div>
 
 <section id="features" class="reveal">
-  <div class="section-label">Features</div>
-  <h2>Everything you need.<br>Nothing you don't.</h2>
-  <p class="section-desc">Built for people who actually train. Fast logging, smart generation, real progress tracking.</p>
+  <div class="section-label" data-i18n="features.label">Features</div>
+  <h2 data-i18n-html="features.title">Everything you need.<br>Nothing you don't.</h2>
+  <p class="section-desc" data-i18n="features.desc">Built for people who actually train. Fast logging, smart generation, real progress tracking.</p>
   <div class="features-grid">
     <article class="feature-card">
       <div class="feature-icon blue"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
-      <h3>Workout Logger</h3>
-      <p>Log sets, reps, weight, and rest periods. Track warm-up sets separately. See your personal records and history for every exercise right where you need them.</p>
+      <h3 data-i18n="features.logger_title">Workout Logger</h3>
+      <p data-i18n="features.logger_desc">Log sets, reps, weight, and rest periods. Track warm-up sets separately. See your personal records and history for every exercise right where you need them.</p>
     </article>
     <article class="feature-card">
       <div class="feature-icon purple"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
-      <h3>Smart Workout Generation</h3>
-      <p>AI-powered Smart Rotation creates routines from your profile — experience level, goals, equipment, and schedule. Push, pull, legs — it handles the programming.</p>
+      <h3 data-i18n="features.smart_title">Smart Workout Generation</h3>
+      <p data-i18n="features.smart_desc">AI-powered Smart Rotation creates routines from your profile — experience level, goals, equipment, and schedule. Push, pull, legs — it handles the programming.</p>
     </article>
     <article class="feature-card">
       <div class="feature-icon green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-      <h3>Progress Tracking</h3>
-      <p>Strength curves, personal records, weekly volume, active time, and streaks. See how you're actually progressing with data from your real sessions.</p>
+      <h3 data-i18n="features.progress_title">Progress Tracking</h3>
+      <p data-i18n="features.progress_desc">Strength curves, personal records, weekly volume, active time, and streaks. See how you're actually progressing with data from your real sessions.</p>
     </article>
     <article class="feature-card">
       <div class="feature-icon blue"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg></div>
-      <h3>Equipment Config</h3>
-      <p>Tell the app exactly what you have — dumbbells with weight ranges, barbells with plates, cables, bench, pull-up bar. Workouts only use what's available to you.</p>
+      <h3 data-i18n="features.equipment_title">Equipment Config</h3>
+      <p data-i18n="features.equipment_desc">Tell the app exactly what you have — dumbbells with weight ranges, barbells with plates, cables, bench, pull-up bar. Workouts only use what's available to you.</p>
     </article>
     <article class="feature-card">
       <div class="feature-icon purple"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
-      <h3>Reps in Reserve</h3>
-      <p>Track effort with RIR after each exercise — from max effort to very easy. The app uses this to understand your intensity and adjust future suggestions.</p>
+      <h3 data-i18n="features.rir_title">Reps in Reserve</h3>
+      <p data-i18n="features.rir_desc">Track effort with RIR after each exercise — from max effort to very easy. The app uses this to understand your intensity and adjust future suggestions.</p>
     </article>
     <article class="feature-card">
       <div class="feature-icon green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-      <h3>Free to Use</h3>
-      <p>No subscription required. No paywall on core features. This is a passion project built by someone who uses it daily — not a venture-backed startup chasing your wallet.</p>
+      <h3 data-i18n="features.free_title">Free to Use</h3>
+      <p data-i18n="features.free_desc">No subscription required. No paywall on core features. This is a passion project built by someone who uses it daily — not a venture-backed startup chasing your wallet.</p>
     </article>
   </div>
 </section>
 
 <section id="how" class="reveal">
-  <div class="section-label">How it works</div>
-  <h2>Set up once. Train forever.</h2>
-  <p class="section-desc">One minute of setup gives you personalized workouts for as long as you train.</p>
+  <div class="section-label" data-i18n="how.label">How it works</div>
+  <h2 data-i18n="how.title">Set up once. Train forever.</h2>
+  <p class="section-desc" data-i18n="how.desc">One minute of setup gives you personalized workouts for as long as you train.</p>
   <div class="steps">
     <div class="step">
       <div class="step-num">01</div>
-      <h3>Configure your profile</h3>
-      <p>Set your experience level, primary goal (strength, hypertrophy, or endurance), weekly frequency, session duration, and available equipment. Takes about a minute.</p>
+      <h3 data-i18n="how.step1_title">Configure your profile</h3>
+      <p data-i18n="how.step1_desc">Set your experience level, primary goal (strength, hypertrophy, or endurance), weekly frequency, session duration, and available equipment. Takes about a minute.</p>
     </div>
     <div class="step">
       <div class="step-num">02</div>
-      <h3>Generate or build</h3>
-      <p>Use Smart Rotation to auto-generate a weekly routine, or create your own templates. Either way, just hit Start Workout when you're ready.</p>
+      <h3 data-i18n="how.step2_title">Generate or build</h3>
+      <p data-i18n="how.step2_desc">Use Smart Rotation to auto-generate a weekly routine, or create your own templates. Either way, just hit Start Workout when you're ready.</p>
     </div>
     <div class="step">
       <div class="step-num">03</div>
-      <h3>Log and progress</h3>
-      <p>Track every set during your session. Log your reps in reserve. Watch your strength curves climb. The more data you give it, the smarter your workouts become.</p>
+      <h3 data-i18n="how.step3_title">Log and progress</h3>
+      <p data-i18n="how.step3_desc">Track every set during your session. Log your reps in reserve. Watch your strength curves climb. The more data you give it, the smarter your workouts become.</p>
     </div>
   </div>
 </section>
 
 <section class="story-section reveal">
-  <div class="section-label">Why this exists</div>
-  <h2>Built out of frustration.</h2>
+  <div class="section-label" data-i18n="story.label">Why this exists</div>
+  <h2 data-i18n="story.title">Built out of frustration.</h2>
   <div class="story-content">
-    <p>I wanted to build a consistent workout routine. So I tried the apps everyone recommends. They all wanted <strong>$15 to $30 per month</strong> just to log sets and reps.</p>
-    <p>I'm a developer. So I built my own. <strong>Fit Project started as a personal tool</strong> — something I use every single day at the gym. It does exactly what I needed: log workouts quickly, track my progress over time, and generate smart routines based on what I've actually been doing.</p>
-    <p>Now I'm putting it out there for anyone who wants the same thing. <strong>No venture capital. No paywall on core features.</strong> Just a workout app built by someone who trains.</p>
+    <p data-i18n-html="story.p1">I wanted to build a consistent workout routine. So I tried the apps everyone recommends. They all wanted <strong>$15 to $30 per month</strong> just to log sets and reps.</p>
+    <p data-i18n-html="story.p2">I'm a developer. So I built my own. <strong>Fit Project started as a personal tool</strong> — something I use every single day at the gym. It does exactly what I needed: log workouts quickly, track my progress over time, and generate smart routines based on what I've actually been doing.</p>
+    <p data-i18n-html="story.p3">Now I'm putting it out there for anyone who wants the same thing. <strong>No venture capital. No paywall on core features.</strong> Just a workout app built by someone who trains.</p>
   </div>
 </section>
 
 <section id="faq" class="reveal">
-  <div class="section-label">FAQ</div>
-  <h2>Common questions</h2>
-  <p class="section-desc">Straight answers.</p>
+  <div class="section-label" data-i18n="faq.label">FAQ</div>
+  <h2 data-i18n="faq.title">Common questions</h2>
+  <p class="section-desc" data-i18n="faq.desc">Straight answers.</p>
   <div class="faq-list">
     <div class="faq-item open">
-      <div class="faq-q">Is Fit Project really free?<span class="faq-toggle">+</span></div>
-      <div class="faq-a">Yes. Fit Project is free to use — no subscription, no paywall on core features. It was built as a passion project by a developer who was tired of paying monthly fees just to log workouts. The workout logging and smart generation features you see today are free, and the goal is to keep it that way.</div>
+      <div class="faq-q"><span data-i18n="faq.q1">Is Fit Project really free?</span><span class="faq-toggle">+</span></div>
+      <div class="faq-a" data-i18n="faq.a1">Yes. Fit Project is free to use — no subscription, no paywall on core features. It was built as a passion project by a developer who was tired of paying monthly fees just to log workouts. The workout logging and smart generation features you see today are free, and the goal is to keep it that way.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">How does Smart Rotation work?<span class="faq-toggle">+</span></div>
-      <div class="faq-a">Smart Rotation generates your weekly workout plan based on your profile settings — experience level, primary goal, available equipment, weekly frequency (2-7 days), and session duration (15-120 minutes). It creates a balanced split (push, pull, lower body, etc.) and rotates through it, factoring in what muscle groups you've recently trained and your progression over time.</div>
+      <div class="faq-q"><span data-i18n="faq.q2">How does Smart Rotation work?</span><span class="faq-toggle">+</span></div>
+      <div class="faq-a" data-i18n="faq.a2">Smart Rotation generates your weekly workout plan based on your profile settings — experience level, primary goal, available equipment, weekly frequency (2-7 days), and session duration (15-120 minutes). It creates a balanced split (push, pull, lower body, etc.) and rotates through it, factoring in what muscle groups you've recently trained and your progression over time.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">What can I track during a workout?<span class="faq-toggle">+</span></div>
-      <div class="faq-a">For each exercise you can track sets (including warm-up sets), reps, weight, and rest periods. After completing an exercise, you rate your effort using Reps in Reserve (RIR). The app also tracks your total session time, total volume, personal records, and shows your strength curve progression over time.</div>
+      <div class="faq-q"><span data-i18n="faq.q3">What can I track during a workout?</span><span class="faq-toggle">+</span></div>
+      <div class="faq-a" data-i18n="faq.a3">For each exercise you can track sets (including warm-up sets), reps, weight, and rest periods. After completing an exercise, you rate your effort using Reps in Reserve (RIR). The app also tracks your total session time, total volume, personal records, and shows your strength curve progression over time.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">What data do you collect?<span class="faq-toggle">+</span></div>
-      <div class="faq-a">Fit Project is privacy-first. Your workout data is never sold to advertisers or shared with third parties. Your fitness data is yours alone.</div>
+      <div class="faq-q"><span data-i18n="faq.q4">What data do you collect?</span><span class="faq-toggle">+</span></div>
+      <div class="faq-a" data-i18n="faq.a4">Fit Project is privacy-first. Your workout data is never sold to advertisers or shared with third parties. Your fitness data is yours alone.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">Can I use my own workouts instead of generated ones?<span class="faq-toggle">+</span></div>
-      <div class="faq-a">Absolutely. You can create custom workout templates, save completed workouts as templates, and build your own weekly routine from scratch. The AI generation is there when you want it, but you're never locked into it.</div>
+      <div class="faq-q"><span data-i18n="faq.q5">Can I use my own workouts instead of generated ones?</span><span class="faq-toggle">+</span></div>
+      <div class="faq-a" data-i18n="faq.a5">Absolutely. You can create custom workout templates, save completed workouts as templates, and build your own weekly routine from scratch. The AI generation is there when you want it, but you're never locked into it.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">What equipment is supported?<span class="faq-toggle">+</span></div>
-      <div class="faq-a">Fit Project supports bench, barbell (with plate configuration), dumbbells (with custom weight ranges), kettlebells, cables, pull-up bar, and more. You toggle what you have, specify details like your dumbbell range, and the app only generates workouts using equipment available to you.</div>
+      <div class="faq-q"><span data-i18n="faq.q6">What equipment is supported?</span><span class="faq-toggle">+</span></div>
+      <div class="faq-a" data-i18n="faq.a6">Fit Project supports bench, barbell (with plate configuration), dumbbells (with custom weight ranges), kettlebells, cables, pull-up bar, and more. You toggle what you have, specify details like your dumbbell range, and the app only generates workouts using equipment available to you.</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">What platforms is Fit Project available on?<span class="faq-toggle">+</span></div>
-      <div class="faq-a">Fit Project is launching on both iOS (Apple App Store) and Android (Google Play Store). Both versions are completely free.</div>
+      <div class="faq-q"><span data-i18n="faq.q7">What platforms is Fit Project available on?</span><span class="faq-toggle">+</span></div>
+      <div class="faq-a" data-i18n="faq.a7">Fit Project is launching on both iOS (Apple App Store) and Android (Google Play Store). Both versions are completely free.</div>
     </div>
   </div>
 </section>
 
 <section id="download" class="final-cta reveal">
-  <h2>Start your project.</h2>
-  <p>Free on iOS and Android. No account required to get started.</p>
+  <h2 data-i18n-html="cta.title">Start your <span class="highlight">fitness</span> project.</h2>
+  <p data-i18n="cta.desc">Free on iOS and Android. No account required to get started.</p>
   <div class="hero-cta">
     <a href="#" class="btn-primary">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-      App Store
+      <span data-i18n="cta.appstore">App Store</span>
     </a>
     <a href="#" class="btn-primary" style="background:var(--white);color:var(--bg-deep);box-shadow:none;">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.06 1.47L13.62 12 3.06 22.53c-.33-.2-.56-.61-.56-1.03V2.5c0-.42.23-.83.56-1.03zm1.38-1l11.45 6.61-2.53 2.53L4.44.47zM4.44 23.53l8.92-8.92 2.53 2.53L4.44 23.53zm14.15-8.73l-2.92-1.69-2.77 2.77 2.77 2.77 2.92-1.69c.82-.47.82-1.69 0-2.16z"/></svg>
-      Google Play
+      <span data-i18n="cta.googleplay">Google Play</span>
     </a>
   </div>
 </section>
 
 <footer>
-  <p>&copy; 2026 Fit Project. Built by someone who trains.</p>
+  <p data-i18n="footer.copy">&copy; 2026 Fit Project. Built by someone who trains.</p>
   <div class="footer-links">
-    <a href="#">Privacy Policy</a>
-    <a href="#">Contact</a>
+    <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+    <a href="#" data-i18n="footer.contact">Contact</a>
   </div>
 </footer>
 
 <script>
+  // FAQ toggle
   document.querySelectorAll('.faq-q').forEach(q => {
     q.addEventListener('click', () => {
       const item = q.parentElement;
@@ -791,13 +861,127 @@
     });
   });
 
+  // Scroll reveal
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) entry.target.classList.add('visible');
     });
   }, { threshold: 0.08 });
-
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // ── i18n ──
+  (function() {
+    var SUPPORTED = ['en', 'es', 'pt', 'fr', 'de'];
+    var LANG_LABELS = { en: 'EN', es: 'ES', pt: 'PT', fr: 'FR', de: 'DE' };
+
+    function getNestedValue(obj, path) {
+      return path.split('.').reduce(function(o, k) { return o && o[k]; }, obj);
+    }
+
+    function detectLang() {
+      var params = new URLSearchParams(window.location.search);
+      var lang = params.get('lang');
+      if (lang && SUPPORTED.indexOf(lang) !== -1) return lang;
+
+      var stored = localStorage.getItem('fitproject-lang');
+      if (stored && SUPPORTED.indexOf(stored) !== -1) return stored;
+
+      var browserLang = (navigator.language || '').slice(0, 2).toLowerCase();
+      if (SUPPORTED.indexOf(browserLang) !== -1) return browserLang;
+
+      return 'en';
+    }
+
+    function applyTranslations(translations) {
+      document.querySelectorAll('[data-i18n]').forEach(function(el) {
+        var val = getNestedValue(translations, el.getAttribute('data-i18n'));
+        if (val) el.textContent = val;
+      });
+
+      document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+        var val = getNestedValue(translations, el.getAttribute('data-i18n-html'));
+        if (val) el.innerHTML = val;
+      });
+
+      var meta = translations.meta;
+      if (meta) {
+        document.title = meta.title || document.title;
+        var descEl = document.querySelector('meta[name="description"]');
+        if (descEl && meta.description) descEl.setAttribute('content', meta.description);
+        var ogTitle = document.querySelector('meta[property="og:title"]');
+        if (ogTitle && meta.og_title) ogTitle.setAttribute('content', meta.og_title);
+        var ogDesc = document.querySelector('meta[property="og:description"]');
+        if (ogDesc && meta.og_description) ogDesc.setAttribute('content', meta.og_description);
+        var twTitle = document.querySelector('meta[name="twitter:title"]');
+        if (twTitle && meta.twitter_title) twTitle.setAttribute('content', meta.twitter_title);
+        var twDesc = document.querySelector('meta[name="twitter:description"]');
+        if (twDesc && meta.twitter_description) twDesc.setAttribute('content', meta.twitter_description);
+      }
+    }
+
+    function setActiveLangOption(lang) {
+      document.querySelectorAll('.lang-option').forEach(function(btn) {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+      });
+      var currentLabel = document.querySelector('.lang-current');
+      if (currentLabel) currentLabel.textContent = LANG_LABELS[lang] || lang.toUpperCase();
+    }
+
+    function showPage() {
+      document.documentElement.classList.remove('i18n-loading');
+    }
+
+    function switchLang(lang) {
+      if (SUPPORTED.indexOf(lang) === -1) lang = 'en';
+      document.documentElement.setAttribute('lang', lang);
+      localStorage.setItem('fitproject-lang', lang);
+      setActiveLangOption(lang);
+
+      var url = new URL(window.location);
+      if (lang === 'en') {
+        url.searchParams.delete('lang');
+      } else {
+        url.searchParams.set('lang', lang);
+      }
+      history.replaceState(null, '', url);
+
+      fetch('/lang/' + lang + '.json')
+        .then(function(r) { return r.json(); })
+        .then(function(data) { applyTranslations(data); showPage(); })
+        .catch(function() { showPage(); });
+    }
+
+    // Language switcher toggle
+    var switcher = document.querySelector('.lang-switcher');
+    var langBtn = document.querySelector('.lang-btn');
+    if (switcher && langBtn) {
+      langBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        switcher.classList.toggle('open');
+      });
+      document.addEventListener('click', function() {
+        switcher.classList.remove('open');
+      });
+      document.querySelectorAll('.lang-option').forEach(function(opt) {
+        opt.addEventListener('click', function(e) {
+          e.stopPropagation();
+          switcher.classList.remove('open');
+          switchLang(this.getAttribute('data-lang'));
+        });
+      });
+    }
+
+    // Init
+    var currentLang = detectLang();
+    setActiveLangOption(currentLang);
+
+    if (currentLang !== 'en') {
+      switchLang(currentLang);
+      setTimeout(showPage, 500);
+    } else {
+      showPage();
+    }
+  })();
 </script>
 
 </body>

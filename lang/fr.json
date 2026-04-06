@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Fit Project — Journal d'entraînement gratuit & générateur de séances par IA | Sans abonnement",
+    "description": "Fit Project est un journal d'entraînement gratuit axé sur la confidentialité, avec génération intelligente de séances par IA basée sur votre profil et votre historique d'entraînement. Suivez vos séries, répétitions et charges. Obtenez des programmes personnalisés. Sans abonnement. Disponible sur iOS et Android.",
+    "og_title": "Fit Project — Votre journal d'entraînement gratuit et confidentiel",
+    "og_description": "Enregistrez vos séances. Obtenez des programmes générés par IA selon votre historique. Sans abonnement, sans revente de données. Gratuit sur iOS et Android.",
+    "twitter_title": "Fit Project — Journal d'entraînement gratuit & générateur de séances par IA",
+    "twitter_description": "Suivez vos entraînements et obtenez des programmes personnalisés et intelligents. Gratuit. Confidentiel. Sans abonnement."
+  },
+  "nav": {
+    "features": "Fonctionnalités",
+    "how": "Comment ça marche",
+    "faq": "FAQ",
+    "cta": "Obtenir l'appli"
+  },
+  "hero": {
+    "badge": "Bientôt disponible sur iOS & Android",
+    "title": "Votre forme.<br>Votre <span class='highlight'>projet</span>.",
+    "sub": "Un journal d'entraînement gratuit avec génération intelligente de programmes par IA. Enregistrez vos séries, suivez vos progrès et obtenez des séances personnalisées basées sur votre historique. Sans abonnement. Sans revente de données. Créé par quelqu'un qui l'utilise vraiment.",
+    "cta_download": "Télécharger gratuitement",
+    "cta_features": "Voir les fonctionnalités"
+  },
+  "trust": {
+    "privacy": "Confidentialité avant tout — vos données restent les vôtres",
+    "free": "Gratuit — sans abonnement requis",
+    "ai": "Programmes IA intelligents basés sur votre historique d'entraînement"
+  },
+  "features": {
+    "label": "Fonctionnalités",
+    "title": "Tout ce qu'il vous faut.<br>Rien de superflu.",
+    "desc": "Conçu pour ceux qui s'entraînent vraiment. Enregistrement rapide, génération intelligente, suivi de progression réel.",
+    "logger_title": "Journal d'entraînement",
+    "logger_desc": "Enregistrez vos séries, répétitions, charges et temps de repos. Suivez vos séries d'échauffement séparément. Consultez vos records personnels et votre historique pour chaque exercice, là où vous en avez besoin.",
+    "smart_title": "Génération intelligente de séances",
+    "smart_desc": "Smart Rotation, propulsé par l'IA, crée des programmes à partir de votre profil — niveau d'expérience, objectifs, équipement et emploi du temps. Push, pull, jambes — l'appli gère la programmation.",
+    "progress_title": "Suivi de progression",
+    "progress_desc": "Courbes de force, records personnels, volume hebdomadaire, temps actif et séries consécutives. Voyez comment vous progressez réellement grâce aux données de vos vraies séances.",
+    "equipment_title": "Configuration de l'équipement",
+    "equipment_desc": "Indiquez précisément ce dont vous disposez — haltères avec plages de poids, barres avec disques, câbles, banc, barre de traction. Les séances n'utilisent que le matériel à votre disposition.",
+    "rir_title": "Répétitions en réserve",
+    "rir_desc": "Évaluez votre effort avec le RIR après chaque exercice — de l'effort maximal à très facile. L'appli utilise cette donnée pour comprendre votre intensité et ajuster les suggestions futures.",
+    "free_title": "Gratuit",
+    "free_desc": "Sans abonnement requis. Pas de paywall sur les fonctionnalités principales. C'est un projet passion créé par quelqu'un qui l'utilise au quotidien — pas une startup financée par du capital-risque qui vise votre portefeuille."
+  },
+  "how": {
+    "label": "Comment ça marche",
+    "title": "Configurez une fois. Entraînez-vous pour toujours.",
+    "desc": "Une minute de configuration vous donne des séances personnalisées aussi longtemps que vous vous entraînez.",
+    "step1_title": "Configurez votre profil",
+    "step1_desc": "Définissez votre niveau d'expérience, votre objectif principal (force, hypertrophie ou endurance), votre fréquence hebdomadaire, la durée de vos séances et votre équipement disponible. Cela prend environ une minute.",
+    "step2_title": "Générez ou créez",
+    "step2_desc": "Utilisez Smart Rotation pour générer automatiquement un programme hebdomadaire, ou créez vos propres modèles. Dans tous les cas, appuyez simplement sur Démarrer la séance quand vous êtes prêt.",
+    "step3_title": "Enregistrez et progressez",
+    "step3_desc": "Suivez chaque série pendant votre séance. Notez vos répétitions en réserve. Regardez vos courbes de force grimper. Plus vous fournissez de données, plus vos séances deviennent intelligentes."
+  },
+  "story": {
+    "label": "Pourquoi cette appli existe",
+    "title": "Née de la frustration.",
+    "p1": "Je voulais me construire une routine d'entraînement régulière. Alors j'ai essayé les applis que tout le monde recommande. Elles demandaient toutes <strong>$15 à $30 par mois</strong> juste pour enregistrer des séries et des répétitions.",
+    "p2": "Je suis développeur. Alors j'ai créé la mienne. <strong>Fit Project a commencé comme un outil personnel</strong> — quelque chose que j'utilise tous les jours à la salle. L'appli fait exactement ce dont j'avais besoin : enregistrer mes séances rapidement, suivre ma progression dans le temps et générer des programmes intelligents basés sur ce que j'ai réellement fait.",
+    "p3": "Maintenant je la mets à disposition de tous ceux qui veulent la même chose. <strong>Pas de capital-risque. Pas de paywall sur les fonctionnalités principales.</strong> Juste une appli d'entraînement créée par quelqu'un qui s'entraîne."
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Questions fréquentes",
+    "desc": "Réponses directes.",
+    "q1": "Fit Project est-il vraiment gratuit ?",
+    "a1": "Oui. Fit Project est gratuit — sans abonnement, sans paywall sur les fonctionnalités principales. Il a été créé comme un projet passion par un développeur fatigué de payer un abonnement mensuel juste pour enregistrer ses séances. Le journal d'entraînement et la génération intelligente de séances que vous voyez aujourd'hui sont gratuits, et l'objectif est que ça le reste.",
+    "q2": "Comment fonctionne Smart Rotation ?",
+    "a2": "Smart Rotation génère votre programme hebdomadaire d'entraînement en fonction de vos paramètres de profil — niveau d'expérience, objectif principal, équipement disponible, fréquence hebdomadaire (2 à 7 jours) et durée de séance (15 à 120 minutes). Il crée une répartition équilibrée (push, pull, bas du corps, etc.) et alterne les séances en tenant compte des groupes musculaires récemment travaillés et de votre progression dans le temps.",
+    "q3": "Que puis-je suivre pendant une séance ?",
+    "a3": "Pour chaque exercice, vous pouvez suivre les séries (y compris les séries d'échauffement), les répétitions, la charge et les temps de repos. Après avoir terminé un exercice, vous évaluez votre effort avec les répétitions en réserve (RIR). L'appli suit également la durée totale de votre séance, le volume total, les records personnels et affiche l'évolution de vos courbes de force dans le temps.",
+    "q4": "Quelles données collectez-vous ?",
+    "a4": "Fit Project place la confidentialité au premier plan. Vos données d'entraînement ne sont jamais vendues à des annonceurs ni partagées avec des tiers. Vos données de remise en forme n'appartiennent qu'à vous.",
+    "q5": "Puis-je utiliser mes propres séances au lieu de celles générées ?",
+    "a5": "Absolument. Vous pouvez créer des modèles de séances personnalisés, enregistrer des séances terminées comme modèles et construire votre propre programme hebdomadaire de zéro. La génération par IA est là quand vous en avez besoin, mais vous n'y êtes jamais enfermé.",
+    "q6": "Quel équipement est pris en charge ?",
+    "a6": "Fit Project prend en charge le banc, la barre (avec configuration des disques), les haltères (avec plages de poids personnalisées), les kettlebells, les câbles, la barre de traction et bien plus. Vous activez ce que vous possédez, précisez des détails comme votre plage d'haltères, et l'appli ne génère que des séances utilisant l'équipement à votre disposition.",
+    "q7": "Sur quelles plateformes Fit Project est-il disponible ?",
+    "a7": "Fit Project sera lancé sur iOS (App Store) et Android (Google Play). Les deux versions sont entièrement gratuites."
+  },
+  "cta": {
+    "title": "Lancez votre projet <span class='highlight'>fitness</span>.",
+    "desc": "Gratuit sur iOS et Android. Aucun compte requis pour commencer.",
+    "appstore": "App Store",
+    "googleplay": "Google Play"
+  },
+  "footer": {
+    "copy": "\u00a9 2026 Fit Project. Créé par quelqu'un qui s'entraîne.",
+    "privacy": "Politique de confidentialité",
+    "contact": "Contact"
+  }
+}

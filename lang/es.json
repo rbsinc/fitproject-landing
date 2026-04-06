@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Fit Project — Registro de Entrenamientos Gratis y Generador de Rutinas con IA | Sin Suscripción",
+    "description": "Fit Project es un registro de entrenamientos gratuito y orientado a la privacidad, con generación inteligente de rutinas con IA basada en tu perfil e historial de entrenamiento. Registra series, repeticiones y peso. Obtén rutinas personalizadas. Sin suscripción. Disponible en iOS y Android.",
+    "og_title": "Fit Project — Tu Registro de Entrenamientos Gratuito y Privado",
+    "og_description": "Registra entrenamientos. Obtén rutinas generadas por IA basadas en tu historial. Sin suscripción, sin venta de datos. Gratis en iOS y Android.",
+    "twitter_title": "Fit Project — Registro de Entrenamientos Gratis y Generador de Rutinas con IA",
+    "twitter_description": "Registra entrenamientos y obtén rutinas inteligentes y personalizadas. Gratis. Privado. Sin suscripción."
+  },
+  "nav": {
+    "features": "Características",
+    "how": "Cómo funciona",
+    "faq": "Preguntas frecuentes",
+    "cta": "Obtener la App"
+  },
+  "hero": {
+    "badge": "Próximamente en iOS y Android",
+    "title": "Tu fitness.<br>Tu <span class='highlight'>proyecto</span>.",
+    "sub": "Un registro de entrenamientos gratuito con generación inteligente de rutinas impulsada por IA. Registra series, sigue tu progreso y obtén entrenamientos personalizados basados en tu historial. Sin suscripción. Sin venta de datos. Creado por alguien que realmente lo usa.",
+    "cta_download": "Descargar Gratis",
+    "cta_features": "Ver características"
+  },
+  "trust": {
+    "privacy": "Privacidad primero — tus datos son tuyos",
+    "free": "Gratis — sin suscripción requerida",
+    "ai": "Rutinas inteligentes con IA a partir de tu historial de entrenamiento"
+  },
+  "features": {
+    "label": "Características",
+    "title": "Todo lo que necesitas.<br>Nada que no.",
+    "desc": "Hecha para personas que realmente entrenan. Registro rápido, generación inteligente, seguimiento real del progreso.",
+    "logger_title": "Registro de Entrenamientos",
+    "logger_desc": "Registra series, repeticiones, peso y períodos de descanso. Lleva un registro de las series de calentamiento por separado. Consulta tus récords personales y el historial de cada ejercicio justo donde los necesitas.",
+    "smart_title": "Generación Inteligente de Rutinas",
+    "smart_desc": "Smart Rotation, impulsada por IA, crea rutinas a partir de tu perfil — nivel de experiencia, objetivos, equipamiento y horario. Empuje, jalón, piernas — se encarga de la programación.",
+    "progress_title": "Seguimiento del Progreso",
+    "progress_desc": "Curvas de fuerza, récords personales, volumen semanal, tiempo activo y rachas. Observa cómo progresas realmente con datos de tus sesiones.",
+    "equipment_title": "Configuración de Equipamiento",
+    "equipment_desc": "Indica a la app exactamente qué tienes — mancuernas con rangos de peso, barras con discos, cables, banco, barra de dominadas. Los entrenamientos solo usan lo que tienes disponible.",
+    "rir_title": "Repeticiones en Reserva",
+    "rir_desc": "Registra el esfuerzo con RIR después de cada ejercicio — desde esfuerzo máximo hasta muy fácil. La app usa esto para entender tu intensidad y ajustar las sugerencias futuras.",
+    "free_title": "Gratis",
+    "free_desc": "Sin suscripción requerida. Sin muro de pago en las funciones principales. Este es un proyecto de pasión creado por alguien que lo usa a diario, no una startup respaldada por inversionistas buscando tu billetera."
+  },
+  "how": {
+    "label": "Cómo funciona",
+    "title": "Configura una vez. Entrena para siempre.",
+    "desc": "Un minuto de configuración te da entrenamientos personalizados por todo el tiempo que entrenes.",
+    "step1_title": "Configura tu perfil",
+    "step1_desc": "Establece tu nivel de experiencia, objetivo principal (fuerza, hipertrofia o resistencia), frecuencia semanal, duración de la sesión y equipamiento disponible. Toma alrededor de un minuto.",
+    "step2_title": "Genera o crea",
+    "step2_desc": "Usa Smart Rotation para generar automáticamente una rutina semanal, o crea tus propias plantillas. De cualquier forma, solo presiona Iniciar Entrenamiento cuando estés listo.",
+    "step3_title": "Registra y progresa",
+    "step3_desc": "Registra cada serie durante tu sesión. Anota tus repeticiones en reserva. Observa cómo suben tus curvas de fuerza. Cuantos más datos le des, más inteligentes serán tus entrenamientos."
+  },
+  "story": {
+    "label": "Por qué existe",
+    "title": "Nació de la frustración.",
+    "p1": "Quería construir una rutina de entrenamiento constante. Así que probé las apps que todos recomiendan. Todas querían cobrar <strong>$15 to $30 por mes</strong> solo por registrar series y repeticiones.",
+    "p2": "Soy desarrollador. Así que construí la mía. <strong>Fit Project empezó como una herramienta personal</strong> — algo que uso todos los días en el gimnasio. Hace exactamente lo que necesitaba: registrar entrenamientos rápido, seguir mi progreso a lo largo del tiempo y generar rutinas inteligentes basadas en lo que realmente he estado haciendo.",
+    "p3": "Ahora lo comparto para cualquiera que quiera lo mismo. <strong>Sin capital de riesgo. Sin muro de pago en las funciones principales.</strong> Solo una app de entrenamiento creada por alguien que entrena."
+  },
+  "faq": {
+    "label": "Preguntas frecuentes",
+    "title": "Preguntas comunes",
+    "desc": "Respuestas directas.",
+    "q1": "¿Fit Project es realmente gratis?",
+    "a1": "Sí. Fit Project es gratis — sin suscripción, sin muro de pago en las funciones principales. Fue creado como un proyecto de pasión por un desarrollador que estaba cansado de pagar cuotas mensuales solo para registrar entrenamientos. El registro de entrenamientos y la generación inteligente que ves hoy son gratuitos, y el objetivo es que siga siendo así.",
+    "q2": "¿Cómo funciona Smart Rotation?",
+    "a2": "Smart Rotation genera tu plan de entrenamiento semanal basándose en la configuración de tu perfil — nivel de experiencia, objetivo principal, equipamiento disponible, frecuencia semanal (2-7 días) y duración de la sesión (15-120 minutos). Crea una división equilibrada (empuje, jalón, tren inferior, etc.) y rota a través de ella, considerando qué grupos musculares has entrenado recientemente y tu progresión a lo largo del tiempo.",
+    "q3": "¿Qué puedo registrar durante un entrenamiento?",
+    "a3": "Para cada ejercicio puedes registrar series (incluyendo series de calentamiento), repeticiones, peso y períodos de descanso. Al completar un ejercicio, calificas tu esfuerzo usando Repeticiones en Reserva (RIR). La app también registra el tiempo total de la sesión, el volumen total, los récords personales y muestra la progresión de tu curva de fuerza a lo largo del tiempo.",
+    "q4": "¿Qué datos recopilan?",
+    "a4": "Fit Project prioriza la privacidad. Tus datos de entrenamiento nunca se venden a anunciantes ni se comparten con terceros. Tus datos de fitness son solo tuyos.",
+    "q5": "¿Puedo usar mis propios entrenamientos en lugar de los generados?",
+    "a5": "Por supuesto. Puedes crear plantillas de entrenamiento personalizadas, guardar entrenamientos completados como plantillas y armar tu propia rutina semanal desde cero. La generación con IA está ahí cuando la quieras, pero nunca estás obligado a usarla.",
+    "q6": "¿Qué equipamiento es compatible?",
+    "a6": "Fit Project es compatible con banco, barra (con configuración de discos), mancuernas (con rangos de peso personalizados), kettlebells, cables, barra de dominadas y más. Activas lo que tienes, especificas detalles como el rango de tus mancuernas, y la app solo genera entrenamientos con el equipamiento que tienes disponible.",
+    "q7": "¿En qué plataformas está disponible Fit Project?",
+    "a7": "Fit Project se lanza tanto en iOS (App Store de Apple) como en Android (Google Play Store). Ambas versiones son completamente gratuitas."
+  },
+  "cta": {
+    "title": "Empieza tu proyecto <span class='highlight'>fitness</span>.",
+    "desc": "Gratis en iOS y Android. No se necesita cuenta para comenzar.",
+    "appstore": "App Store",
+    "googleplay": "Google Play"
+  },
+  "footer": {
+    "copy": "\u00a9 2026 Fit Project. Creado por alguien que entrena.",
+    "privacy": "Política de Privacidad",
+    "contact": "Contacto"
+  }
+}

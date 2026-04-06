@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "title": "Fit Project — Kostenloses Trainings-Logbuch & KI-Trainingsplan-Generator | Kein Abo",
+    "description": "Fit Project ist ein kostenloses, datenschutzorientiertes Trainings-Logbuch mit intelligenter KI-Trainingsplan-Erstellung basierend auf deinem Profil und deiner Trainingshistorie. Erfasse Sätze, Wiederholungen und Gewicht. Erhalte personalisierte Routinen. Keine Abogebühren. Verfügbar auf iOS und Android.",
+    "og_title": "Fit Project — Dein kostenloses, privates Trainings-Logbuch",
+    "og_description": "Trainings loggen. KI-generierte Routinen basierend auf deiner Historie. Kein Abo, kein Datenverkauf. Kostenlos auf iOS und Android.",
+    "twitter_title": "Fit Project — Kostenloses Trainings-Logbuch & KI-Trainingsplan-Generator",
+    "twitter_description": "Trainings tracken und smarte, personalisierte Routinen erhalten. Kostenlos. Privat. Kein Abo."
+  },
+  "nav": {
+    "features": "Funktionen",
+    "how": "So funktioniert's",
+    "faq": "FAQ",
+    "cta": "App herunterladen"
+  },
+  "hero": {
+    "badge": "Bald verfügbar auf iOS & Android",
+    "title": "Dein Training.<br>Dein <span class='highlight'>Projekt</span>.",
+    "sub": "Ein kostenloses Trainings-Logbuch mit KI-gest\u00fctzter intelligenter Routinen-Erstellung. S\u00e4tze loggen, Fortschritte verfolgen und personalisierte Workouts basierend auf deiner Historie erhalten. Kein Abo. Kein Datenverkauf. Gebaut von jemandem, der es selbst nutzt.",
+    "cta_download": "Kostenlos herunterladen",
+    "cta_features": "Funktionen ansehen"
+  },
+  "trust": {
+    "privacy": "Datenschutz zuerst — deine Daten gehören dir",
+    "free": "Kostenlos nutzbar \u2014 kein Abo erforderlich",
+    "ai": "Intelligente KI-Routinen aus deiner Trainingshistorie"
+  },
+  "features": {
+    "label": "Funktionen",
+    "title": "Alles, was du brauchst.<br>Nichts, was du nicht brauchst.",
+    "desc": "Entwickelt für Leute, die wirklich trainieren. Schnelles Loggen, intelligente Erstellung, echtes Fortschritts-Tracking.",
+    "logger_title": "Trainings-Logbuch",
+    "logger_desc": "Erfasse Sätze, Wiederholungen, Gewicht und Pausenzeiten. Tracke Aufwärmsätze separat. Sieh deine persönlichen Rekorde und die Historie jeder Übung genau dort, wo du sie brauchst.",
+    "smart_title": "Intelligente Trainingsplan-Erstellung",
+    "smart_desc": "Die KI-gestützte Smart Rotation erstellt Routinen aus deinem Profil — Erfahrungsstufe, Ziele, Ausstattung und Zeitplan. Push, Pull, Beine — die Programmierung wird für dich übernommen.",
+    "progress_title": "Fortschrittsverfolgung",
+    "progress_desc": "Kraftkurven, persönliche Rekorde, Wochenvolumen, aktive Zeit und Serien. Sieh, wie du dich tatsächlich entwickelst — mit Daten aus deinen echten Einheiten.",
+    "equipment_title": "Geräte-Konfiguration",
+    "equipment_desc": "Sag der App genau, was du hast — Kurzhanteln mit Gewichtsbereichen, Langhanteln mit Scheiben, Kabelzüge, Bank, Klimmzugstange. Workouts nutzen nur, was dir zur Verfügung steht.",
+    "rir_title": "Wiederholungen in Reserve (RIR)",
+    "rir_desc": "Erfasse deine Anstrengung mit RIR nach jeder Übung — von maximaler Belastung bis sehr leicht. Die App nutzt dies, um deine Intensität zu verstehen und zukünftige Vorschläge anzupassen.",
+    "free_title": "Kostenlos nutzbar",
+    "free_desc": "Kein Abo erforderlich. Keine Paywall f\u00fcr Kernfunktionen. Dies ist ein Herzensprojekt, gebaut von jemandem, der es t\u00e4glich nutzt \u2014 kein risikokapitalfinanziertes Startup, das dein Geld will."
+  },
+  "how": {
+    "label": "So funktioniert's",
+    "title": "Einmal einrichten. Für immer trainieren.",
+    "desc": "Eine Minute Einrichtung gibt dir personalisierte Workouts, solange du trainierst.",
+    "step1_title": "Profil konfigurieren",
+    "step1_desc": "Lege deine Erfahrungsstufe, dein Hauptziel (Kraft, Hypertrophie oder Ausdauer), Trainingshäufigkeit pro Woche, Einheitsdauer und verfügbare Ausstattung fest. Dauert etwa eine Minute.",
+    "step2_title": "Generieren oder selbst erstellen",
+    "step2_desc": "Nutze Smart Rotation, um automatisch einen Wochenplan zu generieren, oder erstelle eigene Vorlagen. So oder so — drück einfach auf \u201ETraining starten\u201C, wenn du bereit bist.",
+    "step3_title": "Loggen und Fortschritte machen",
+    "step3_desc": "Tracke jeden Satz während deiner Einheit. Logge deine Wiederholungen in Reserve (RIR). Beobachte, wie deine Kraftkurven steigen. Je mehr Daten du eingibst, desto intelligenter werden deine Workouts."
+  },
+  "story": {
+    "label": "Warum es das gibt",
+    "title": "Aus Frust entstanden.",
+    "p1": "Ich wollte eine konsequente Trainingsroutine aufbauen. Also habe ich die Apps ausprobiert, die alle empfehlen. Alle wollten <strong>$15 bis $30 pro Monat</strong> — nur um Sätze und Wiederholungen zu loggen.",
+    "p2": "Ich bin Entwickler. Also habe ich meine eigene gebaut. <strong>Fit Project begann als persönliches Tool</strong> — etwas, das ich jeden einzelnen Tag im Gym benutze. Es tut genau das, was ich brauchte: Workouts schnell loggen, meinen Fortschritt über die Zeit verfolgen und intelligente Routinen generieren, basierend auf dem, was ich tatsächlich gemacht habe.",
+    "p3": "Jetzt stelle ich es f\u00fcr alle bereit, die dasselbe wollen. <strong>Kein Risikokapital. Keine Paywall f\u00fcr Kernfunktionen.</strong> Einfach eine Workout-App, gebaut von jemandem, der trainiert."
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Häufige Fragen",
+    "desc": "Klare Antworten.",
+    "q1": "Ist Fit Project wirklich kostenlos?",
+    "a1": "Ja. Fit Project ist kostenlos nutzbar \u2014 kein Abo, keine Paywall f\u00fcr Kernfunktionen. Es wurde als Herzensprojekt von einem Entwickler gebaut, der es leid war, monatliche Geb\u00fchren f\u00fcrs Trainings-Loggen zu zahlen. Das Trainings-Logbuch und die intelligente Generierung, die du heute siehst, sind kostenlos, und das Ziel ist, das so beizubehalten.",
+    "q2": "Wie funktioniert Smart Rotation?",
+    "a2": "Smart Rotation erstellt deinen wöchentlichen Trainingsplan basierend auf deinen Profileinstellungen — Erfahrungsstufe, Hauptziel, verfügbare Ausstattung, Trainingshäufigkeit pro Woche (2–7 Tage) und Einheitsdauer (15–120 Minuten). Es erstellt einen ausgewogenen Split (Push, Pull, Unterkörper usw.) und rotiert durch diesen, unter Berücksichtigung der zuletzt trainierten Muskelgruppen und deiner Progression über die Zeit.",
+    "q3": "Was kann ich während eines Trainings tracken?",
+    "a3": "Für jede Übung kannst du Sätze (einschließlich Aufwärmsätze), Wiederholungen, Gewicht und Pausenzeiten erfassen. Nach Abschluss einer Übung bewertest du deine Anstrengung mit Wiederholungen in Reserve (RIR). Die App trackt außerdem deine Gesamtdauer, das Gesamtvolumen, persönliche Rekorde und zeigt die Entwicklung deiner Kraftkurven über die Zeit.",
+    "q4": "Welche Daten werden erfasst?",
+    "a4": "Fit Project stellt Datenschutz an erste Stelle. Deine Trainingsdaten werden niemals an Werbetreibende verkauft oder mit Dritten geteilt. Deine Fitnessdaten geh\u00f6ren dir allein.",
+    "q5": "Kann ich eigene Workouts statt der generierten verwenden?",
+    "a5": "Absolut. Du kannst eigene Trainingsvorlagen erstellen, abgeschlossene Workouts als Vorlagen speichern und deine eigene Wochenroutine von Grund auf zusammenstellen. Die KI-Generierung ist da, wenn du sie brauchst, aber du bist nie darauf festgelegt.",
+    "q6": "Welche Geräte werden unterstützt?",
+    "a6": "Fit Project unterstützt Bank, Langhantel (mit Scheiben-Konfiguration), Kurzhanteln (mit individuellen Gewichtsbereichen), Kettlebells, Kabelzüge, Klimmzugstange und mehr. Du aktivierst, was du hast, gibst Details wie deinen Kurzhantel-Bereich an, und die App generiert nur Workouts mit Geräten, die dir zur Verfügung stehen.",
+    "q7": "Auf welchen Plattformen ist Fit Project verfügbar?",
+    "a7": "Fit Project erscheint auf iOS (App Store) und Android (Google Play). Beide Versionen sind komplett kostenlos."
+  },
+  "cta": {
+    "title": "Starte dein <span class='highlight'>Fitness</span>-Projekt.",
+    "desc": "Kostenlos auf iOS und Android. Kein Konto erforderlich, um loszulegen.",
+    "appstore": "App Store",
+    "googleplay": "Google Play"
+  },
+  "footer": {
+    "copy": "\u00a9 2026 Fit Project. Gebaut von jemandem, der trainiert.",
+    "privacy": "Datenschutzerklärung",
+    "contact": "Kontakt"
+  }
+}
