@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fit Project — Free Workout Logger & AI Workout Generator | No Subscription</title>
+  <meta name="description" content="Fit Project is a free, privacy-first workout logger with smart AI workout generation based on your profile and training history. Track sets, reps, and weight. Get personalized routines. No subscription fees. Available on iOS and Android.">
+  <meta name="keywords" content="free workout tracker, workout logger app, AI workout generator, privacy workout app, no subscription fitness app, free gym tracker, workout planner free, exercise logger, smart workout generation, workout history tracker">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Fit Project — Your Free, Private Workout Logger">
+  <meta property="og:description" content="Log workouts. Get AI-generated routines based on your history. No subscription, no data selling. Free on iOS and Android.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fitproject.app">
+  <meta property="og:image" content="https://fitproject.app/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fit Project — Free Workout Logger & AI Workout Generator">
+  <meta name="twitter:description" content="Track workouts and get smart, personalized routines. Free. Private. No subscription.">
+
+  <link rel="canonical" href="https://fitproject.app">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <!-- JSON-LD: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Fit Project",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "iOS, Android",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Fit Project is a free, privacy-first workout logger with AI-powered smart workout generation. It creates personalized workout routines based on your profile, equipment, goals, and training history. Features include workout logging with sets, reps, and weight tracking, weekly streak tracking, exercise progress charts with strength curves, smart rotation scheduling, reps-in-reserve tracking, equipment configuration, and custom workout templates. No subscription required. No ads. No data collection.",
+    "featureList": [
+      "Free workout logging with sets, reps, and weight",
+      "AI-generated workouts based on profile and training history",
+      "Smart rotation scheduling with push/pull/legs splits",
+      "Exercise progress tracking with strength curves",
+      "Reps in reserve (RIR) tracking for effort management",
+      "Equipment configuration for personalized exercises",
+      "Custom workout templates",
+      "Weekly streak and progress tracking",
+      "Privacy-first — no data selling, no tracking, no ads",
+      "Available on iOS and Android"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Fit Project really free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Fit Project is completely free to use with no subscription, no premium tier, no in-app purchases, and no ads. It was built as a personal project by a developer who was tired of paying $15-30 per month just to log workouts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the AI workout generation work in Fit Project?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fit Project uses a Smart Rotation system that generates workouts based on your profile settings including experience level, primary goal (strength, hypertrophy, or endurance), weekly frequency, session duration, and available equipment. The AI considers your workout history and what muscle groups you've recently trained to create balanced, progressive routines. You can set your weekly frequency from 2-7 days and session duration from 15-120 minutes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What can I track in Fit Project?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fit Project lets you track sets, reps, weight, rest periods, and reps in reserve (RIR) for each exercise. It shows your exercise history, personal records, strength curves over time, target muscle groups, total volume, and active training time. You can also track weekly streaks and see your weekly workout completion progress."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What equipment does Fit Project support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fit Project supports a wide range of equipment including bench, barbell, dumbbells, kettlebells, cables, pull-up bar, and more. You can configure exactly what equipment you have access to with specific details like dumbbell weight ranges and number of barbell plates. The AI only generates workouts using equipment you have available."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my workout data private in Fit Project?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Fit Project is privacy-first. Your workout data is not sold to advertisers, shared with third parties, or used for tracking. There are no ads in the app. Your fitness journey is personal and stays that way."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What platforms is Fit Project available on?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fit Project is available on iOS (Apple App Store) and Android (Google Play Store). Both versions are completely free."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-deep: #080c14;
+      --bg-card: #0d1524;
+      --bg-card-hover: #111d30;
+      --bg-surface: #142038;
+      --blue-primary: #2563eb;
+      --blue-bright: #3b82f6;
+      --blue-glow: rgba(37, 99, 235, 0.15);
+      --blue-subtle: rgba(37, 99, 235, 0.08);
+      --green-accent: #22c55e;
+      --green-glow: rgba(34, 197, 94, 0.15);
+      --white: #f0f2f5;
+      --gray-100: #d1d5db;
+      --gray-300: #9ca3af;
+      --gray-500: #6b7280;
+      --gray-700: #374151;
+      --gray-900: #1a2332;
+      --font-main: 'Outfit', sans-serif;
+      --font-mono: 'IBM Plex Mono', monospace;
+      --radius: 16px;
+      --radius-sm: 10px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+    body {
+      font-family: var(--font-main);
+      background: var(--bg-deep);
+      color: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 16px 40px;
+      display: flex; justify-content: space-between; align-items: center;
+      backdrop-filter: blur(24px) saturate(1.4);
+      background: rgba(8, 12, 20, 0.85);
+      border-bottom: 1px solid rgba(37, 99, 235, 0.08);
+    }
+
+    .logo {
+      display: flex; align-items: center; gap: 12px;
+      font-weight: 700; font-size: 1.15rem; letter-spacing: -0.02em;
+      text-decoration: none; color: var(--white);
+    }
+
+    .logo-icon {
+      width: 36px; height: 36px;
+      background: var(--blue-primary); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+    }
+
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a {
+      color: var(--gray-300); text-decoration: none; font-size: 0.9rem;
+      font-weight: 500; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--white); }
+
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--blue-primary); color: white;
+      padding: 12px 28px; border-radius: 100px;
+      font-weight: 600; font-size: 0.95rem; text-decoration: none;
+      border: none; cursor: pointer; font-family: var(--font-main);
+      transition: all 0.25s ease;
+      box-shadow: 0 0 24px rgba(37, 99, 235, 0.25);
+    }
+    .btn-primary:hover {
+      background: #3b82f6; transform: translateY(-1px);
+      box-shadow: 0 4px 32px rgba(37, 99, 235, 0.4);
+    }
+
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; color: var(--white);
+      padding: 12px 28px; border-radius: 100px;
+      font-weight: 500; font-size: 0.95rem; text-decoration: none;
+      border: 1px solid var(--gray-700); cursor: pointer;
+      font-family: var(--font-main); transition: all 0.25s ease;
+    }
+    .btn-outline:hover { border-color: var(--gray-500); background: rgba(255,255,255,0.03); }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: grid; grid-template-columns: 1fr 1fr;
+      align-items: center; gap: 60px;
+      padding: 140px 40px 80px;
+      max-width: 1280px; margin: 0 auto; position: relative;
+    }
+
+    .hero::before {
+      content: ''; position: absolute; top: 10%; right: 15%;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.12) 0%, transparent 70%);
+      pointer-events: none; filter: blur(60px);
+    }
+
+    .hero-content { position: relative; z-index: 1; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--blue-subtle); border: 1px solid rgba(37, 99, 235, 0.2);
+      padding: 8px 18px; border-radius: 100px;
+      font-size: 0.82rem; color: var(--blue-bright); font-weight: 500;
+      margin-bottom: 28px; animation: fadeUp 0.7s ease both;
+    }
+
+    .hero-badge .dot {
+      width: 6px; height: 6px; background: var(--blue-bright);
+      border-radius: 50%; animation: pulse 2s infinite;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 5.5vw, 4.5rem); font-weight: 800;
+      letter-spacing: -0.04em; line-height: 1.05; margin-bottom: 24px;
+      animation: fadeUp 0.7s ease 0.1s both;
+    }
+
+    h1 .highlight {
+      background: linear-gradient(135deg, var(--blue-bright), #818cf8);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: 1.15rem; color: var(--gray-300); max-width: 480px;
+      line-height: 1.7; margin-bottom: 40px; font-weight: 400;
+      animation: fadeUp 0.7s ease 0.2s both;
+    }
+
+    .hero-cta {
+      display: flex; gap: 14px; flex-wrap: wrap;
+      animation: fadeUp 0.7s ease 0.3s both;
+    }
+
+    /* PHONE MOCKUPS */
+    .hero-phones {
+      position: relative; z-index: 1;
+      display: flex; justify-content: center; align-items: center;
+      animation: fadeUp 0.9s ease 0.3s both;
+    }
+
+    .phone-frame {
+      width: 260px; background: var(--bg-card); border-radius: 32px;
+      border: 2px solid rgba(37, 99, 235, 0.15); overflow: hidden;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.5), 0 0 60px rgba(37, 99, 235, 0.08),
+        inset 0 1px 0 rgba(255,255,255,0.05);
+      position: relative; transition: transform 0.4s ease;
+    }
+    .phone-frame:hover { transform: translateY(-4px); }
+
+    .phone-frame.back {
+      width: 240px; position: absolute; right: 0;
+      transform: translateX(30%) rotate(4deg); opacity: 0.7; z-index: -1;
+    }
+    .phone-frame.back:hover { transform: translateX(30%) rotate(4deg) translateY(-4px); }
+
+    .phone-notch {
+      width: 120px; height: 28px; background: var(--bg-deep);
+      border-radius: 0 0 16px 16px; margin: 0 auto;
+    }
+
+    .phone-screen { padding: 12px; }
+
+    /* Mini app recreation */
+    .mock-header {
+      display: flex; align-items: center; justify-content: space-between; padding: 8px 4px 12px;
+    }
+    .mock-title {
+      display: flex; align-items: center; gap: 6px; font-weight: 700; font-size: 0.85rem;
+    }
+    .mock-title .bolt { color: var(--blue-bright); font-size: 0.9rem; }
+    .mock-gear {
+      width: 24px; height: 24px; background: var(--bg-surface); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.6rem; color: var(--gray-500);
+    }
+    .mock-section-label { font-size: 0.72rem; font-weight: 700; margin: 8px 0 6px; }
+    .mock-badge {
+      display: inline-block; font-size: 0.55rem; font-weight: 600;
+      padding: 2px 8px; border-radius: 100px;
+      background: rgba(34, 197, 94, 0.15); color: var(--green-accent);
+      border: 1px solid rgba(34, 197, 94, 0.2);
+    }
+    .mock-workout-card {
+      background: linear-gradient(135deg, var(--bg-surface) 0%, rgba(37,99,235,0.08) 100%);
+      border-radius: 14px; padding: 16px; text-align: center;
+      border: 1px solid rgba(37, 99, 235, 0.1);
+    }
+    .mock-workout-icon {
+      width: 44px; height: 44px; background: rgba(37,99,235,0.15); border-radius: 50%;
+      margin: 0 auto 10px; display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; color: var(--blue-bright);
+    }
+    .mock-workout-name { font-weight: 700; font-size: 0.9rem; margin-bottom: 4px; }
+    .mock-workout-desc { font-size: 0.55rem; color: var(--gray-500); line-height: 1.5; margin-bottom: 10px; }
+    .mock-btn {
+      background: var(--blue-primary); color: white; border: none; border-radius: 10px;
+      padding: 8px 0; width: 100%; font-size: 0.65rem; font-weight: 600;
+      font-family: var(--font-main);
+      display: flex; align-items: center; justify-content: center; gap: 4px;
+    }
+    .mock-streak { margin-top: 12px; }
+    .mock-streak-header {
+      display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;
+    }
+    .mock-streak-header span { font-size: 0.72rem; font-weight: 700; }
+    .mock-streak-header a { font-size: 0.55rem; color: var(--gray-500); text-decoration: none; }
+    .mock-days {
+      display: flex; gap: 4px; background: var(--bg-surface); border-radius: 10px;
+      padding: 8px 6px; border: 1px solid rgba(255,255,255,0.04);
+    }
+    .mock-day { flex: 1; text-align: center; }
+    .mock-day-label { font-size: 0.45rem; color: var(--gray-500); margin-bottom: 4px; font-weight: 600; }
+    .mock-day-circle {
+      width: 22px; height: 22px; border-radius: 50%; margin: 0 auto;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.45rem; font-weight: 600;
+    }
+    .mock-day-circle.done {
+      background: rgba(34, 197, 94, 0.15); border: 1.5px solid var(--green-accent); color: var(--green-accent);
+    }
+    .mock-day-circle.today { background: var(--blue-primary); color: white; }
+    .mock-day-circle.future {
+      background: var(--bg-card); border: 1.5px solid var(--gray-700); color: var(--gray-500);
+    }
+
+    /* Phone 2: schedule */
+    .mock-schedule-item {
+      background: var(--bg-surface); border-radius: 10px; padding: 10px 12px;
+      margin-bottom: 6px; display: flex; align-items: center; gap: 10px;
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+    .mock-schedule-bar {
+      width: 3px; height: 32px; border-radius: 2px; background: var(--green-accent); flex-shrink: 0;
+    }
+    .mock-schedule-bar.upcoming { background: var(--blue-primary); }
+    .mock-schedule-text h4 { font-size: 0.7rem; font-weight: 600; }
+    .mock-schedule-text p { font-size: 0.5rem; color: var(--gray-500); }
+    .mock-progress-bar {
+      background: var(--bg-surface); border-radius: 10px; padding: 10px 12px;
+      margin-bottom: 10px; border: 1px solid rgba(255,255,255,0.04);
+    }
+    .mock-progress-header { display: flex; justify-content: space-between; margin-bottom: 6px; }
+    .mock-progress-header span { font-size: 0.55rem; color: var(--gray-300); }
+    .mock-progress-header strong { font-size: 0.55rem; color: var(--blue-bright); }
+    .mock-bar-track { height: 5px; background: var(--gray-700); border-radius: 3px; overflow: hidden; }
+    .mock-bar-fill { height: 100%; width: 75%; background: var(--blue-primary); border-radius: 3px; }
+
+    /* TRUST BAR */
+    .trust-bar { padding: 0 40px 100px; max-width: 1280px; margin: 0 auto; }
+    .trust-items { display: flex; gap: 40px; flex-wrap: wrap; }
+    .trust-item {
+      display: flex; align-items: center; gap: 10px;
+      color: var(--gray-300); font-size: 0.9rem; font-weight: 500;
+    }
+    .trust-icon {
+      width: 36px; height: 36px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .trust-icon.blue { background: var(--blue-subtle); color: var(--blue-bright); }
+    .trust-icon.green { background: var(--green-glow); color: var(--green-accent); }
+
+    /* SECTIONS */
+    section { padding: 120px 40px; max-width: 1280px; margin: 0 auto; }
+    .section-label {
+      font-family: var(--font-mono); font-size: 0.78rem; color: var(--blue-bright);
+      letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 14px; font-weight: 500;
+    }
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800;
+      letter-spacing: -0.035em; line-height: 1.08; margin-bottom: 16px;
+    }
+    .section-desc {
+      color: var(--gray-300); font-size: 1.05rem; max-width: 540px;
+      line-height: 1.65; margin-bottom: 56px;
+    }
+
+    /* FEATURES */
+    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .feature-card {
+      background: var(--bg-card); border: 1px solid rgba(255,255,255,0.04);
+      border-radius: var(--radius); padding: 36px 28px;
+      transition: all 0.3s ease; position: relative; overflow: hidden;
+    }
+    .feature-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--blue-primary), transparent);
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .feature-card:hover {
+      background: var(--bg-card-hover); border-color: rgba(37, 99, 235, 0.12);
+      transform: translateY(-2px);
+    }
+    .feature-card:hover::before { opacity: 1; }
+    .feature-icon {
+      width: 44px; height: 44px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px; font-size: 1.15rem;
+    }
+    .feature-icon.blue { background: var(--blue-subtle); color: var(--blue-bright); }
+    .feature-icon.green { background: var(--green-glow); color: var(--green-accent); }
+    .feature-icon.purple { background: rgba(139,92,246,0.1); color: #a78bfa; }
+    .feature-card h3 { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .feature-card p { color: var(--gray-300); font-size: 0.9rem; line-height: 1.6; }
+
+    /* HOW IT WORKS */
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .step {
+      position: relative; background: var(--bg-card);
+      border: 1px solid rgba(255,255,255,0.04); border-radius: var(--radius); padding: 36px 28px;
+    }
+    .step-num {
+      font-family: var(--font-mono); font-size: 3rem; font-weight: 700;
+      color: rgba(37, 99, 235, 0.12); line-height: 1; margin-bottom: 16px;
+    }
+    .step h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 8px; }
+    .step p { color: var(--gray-300); font-size: 0.9rem; line-height: 1.6; }
+
+    /* STORY */
+    .story-section {
+      border-top: 1px solid rgba(255,255,255,0.04);
+      border-bottom: 1px solid rgba(255,255,255,0.04); position: relative;
+    }
+    .story-section::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at 20% 50%, rgba(37, 99, 235, 0.04) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .story-content { max-width: 620px; position: relative; }
+    .story-content p { color: var(--gray-300); font-size: 1.05rem; line-height: 1.8; margin-bottom: 20px; }
+    .story-content strong { color: var(--white); font-weight: 600; }
+
+    /* FAQ */
+    .faq-list { max-width: 720px; }
+    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.05); padding: 24px 0; }
+    .faq-q {
+      font-size: 1.05rem; font-weight: 600; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center; gap: 16px;
+      transition: color 0.2s;
+    }
+    .faq-q:hover { color: var(--blue-bright); }
+    .faq-toggle {
+      width: 28px; height: 28px; border-radius: 8px; background: var(--bg-surface);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+      font-family: var(--font-mono); font-size: 1rem; color: var(--gray-500); transition: all 0.2s;
+    }
+    .faq-item.open .faq-toggle {
+      background: var(--blue-subtle); color: var(--blue-bright); transform: rotate(45deg);
+    }
+    .faq-a {
+      color: var(--gray-300); font-size: 0.92rem; line-height: 1.7;
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.35s ease, opacity 0.3s ease, margin 0.3s ease;
+      opacity: 0; margin-top: 0;
+    }
+    .faq-item.open .faq-a { max-height: 300px; opacity: 1; margin-top: 14px; }
+
+    /* FINAL CTA */
+    .final-cta { text-align: center; padding: 160px 40px; position: relative; }
+    .final-cta::before {
+      content: ''; position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%); width: 600px; height: 300px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
+      pointer-events: none; filter: blur(60px);
+    }
+    .final-cta h2 { margin-bottom: 12px; position: relative; }
+    .final-cta p { color: var(--gray-300); font-size: 1.1rem; margin-bottom: 36px; position: relative; }
+    .final-cta .hero-cta { justify-content: center; position: relative; }
+
+    /* FOOTER */
+    footer {
+      padding: 36px 40px; border-top: 1px solid rgba(255,255,255,0.04);
+      max-width: 1280px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 16px;
+    }
+    footer p { color: var(--gray-500); font-size: 0.82rem; }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a {
+      color: var(--gray-500); text-decoration: none; font-size: 0.82rem; transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gray-300); }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+    .reveal {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr; padding: 120px 24px 60px;
+        gap: 40px; text-align: center;
+      }
+      .hero-sub { margin-left: auto; margin-right: auto; }
+      .hero-cta { justify-content: center; }
+      .hero-phones { height: 420px; }
+      .phone-frame { width: 220px; }
+      .phone-frame.back { width: 200px; }
+      nav { padding: 14px 20px; }
+      .nav-links { display: none; }
+      section { padding: 80px 24px; }
+      .trust-bar { padding: 0 24px 60px; }
+      .trust-items { flex-direction: column; gap: 20px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr; }
+      footer { padding: 28px 24px; flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#" class="logo">
+    <div class="logo-icon">⚡</div>
+    Fit Project
+  </a>
+  <div class="nav-links">
+    <a href="#features">Features</a>
+    <a href="#how">How it works</a>
+    <a href="#faq">FAQ</a>
+    <a href="#download" class="btn-primary" style="padding: 10px 22px; font-size: 0.85rem;">Get the App</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="hero-badge"><span class="dot"></span> Coming soon on iOS & Android</div>
+    <h1>Your fitness.<br>Your <span class="highlight">project</span>.</h1>
+    <p class="hero-sub">A free workout logger with AI-powered smart routine generation. Log sets, track progress, and get personalized workouts based on your history. No subscription. No ads. No data selling.</p>
+    <div class="hero-cta">
+      <a href="#download" class="btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Free
+      </a>
+      <a href="#features" class="btn-outline">See features</a>
+    </div>
+  </div>
+
+  <div class="hero-phones">
+    <div class="phone-frame back">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <div class="mock-header">
+          <div class="mock-title"><span class="bolt">⚡</span> Fit project</div>
+          <div class="mock-gear">⚙</div>
+        </div>
+        <div style="font-size:0.5rem;color:var(--gray-500);text-align:center;font-weight:600;letter-spacing:0.05em;margin-bottom:8px;">WEEK 14 — MAR 30 - APR 5</div>
+        <div class="mock-progress-bar">
+          <div class="mock-progress-header"><span>Weekly Progress</span><strong>3 of 4 completed</strong></div>
+          <div class="mock-bar-track"><div class="mock-bar-fill"></div></div>
+        </div>
+        <div style="font-size:0.5rem;font-weight:700;letter-spacing:0.08em;color:var(--gray-500);margin:10px 0 6px;">COMPLETED</div>
+        <div class="mock-schedule-item">
+          <div class="mock-schedule-bar"></div>
+          <div class="mock-schedule-text"><h4>Lower Body</h4><p>Done · Monday · 55 min</p></div>
+        </div>
+        <div class="mock-schedule-item">
+          <div class="mock-schedule-bar"></div>
+          <div class="mock-schedule-text"><h4>Push Strength</h4><p>Done · Tuesday · 54 min</p></div>
+        </div>
+        <div class="mock-schedule-item">
+          <div class="mock-schedule-bar"></div>
+          <div class="mock-schedule-text"><h4>Pull Strength</h4><p>Done · Thursday · 33 min</p></div>
+        </div>
+        <div style="font-size:0.5rem;font-weight:700;letter-spacing:0.08em;color:var(--blue-bright);margin:10px 0 6px;">UP NEXT</div>
+        <div class="mock-schedule-item" style="border-color:rgba(37,99,235,0.15);">
+          <div class="mock-schedule-bar upcoming"></div>
+          <div class="mock-schedule-text"><h4>Lower Body</h4><p>Today · 45m · Auto-generated</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="phone-frame">
+      <div class="phone-notch"></div>
+      <div class="phone-screen">
+        <div class="mock-header">
+          <div class="mock-title"><span class="bolt">⚡</span> Fit project</div>
+          <div class="mock-gear">⚙</div>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <div class="mock-section-label">Today's Workout</div>
+          <div class="mock-badge">Active Day</div>
+        </div>
+        <div class="mock-workout-card">
+          <div class="mock-workout-icon">🏋️</div>
+          <div class="mock-workout-name">Lower Body</div>
+          <div class="mock-workout-desc">Get ready for a challenging routine designed to build muscle and boost endurance.</div>
+          <button class="mock-btn">▶ Start Workout</button>
+        </div>
+        <div class="mock-streak">
+          <div class="mock-streak-header"><span>Weekly Streak</span><a href="#">Schedule →</a></div>
+          <div class="mock-days">
+            <div class="mock-day"><div class="mock-day-label">M</div><div class="mock-day-circle done">✓</div></div>
+            <div class="mock-day"><div class="mock-day-label">T</div><div class="mock-day-circle done">✓</div></div>
+            <div class="mock-day"><div class="mock-day-label">W</div><div class="mock-day-circle future">1</div></div>
+            <div class="mock-day"><div class="mock-day-label">T</div><div class="mock-day-circle done">✓</div></div>
+            <div class="mock-day"><div class="mock-day-label">F</div><div class="mock-day-circle future">3</div></div>
+            <div class="mock-day"><div class="mock-day-label">S</div><div class="mock-day-circle today">4</div></div>
+            <div class="mock-day"><div class="mock-day-label">S</div><div class="mock-day-circle future">5</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="trust-bar" style="animation: fadeUp 0.7s ease 0.5s both;">
+  <div class="trust-items">
+    <div class="trust-item">
+      <div class="trust-icon blue"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      Privacy-first — your data stays yours
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon green"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+      100% free — no subscription, ever
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon blue"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+      Smart AI routines from your training history
+    </div>
+  </div>
+</div>
+
+<section id="features" class="reveal">
+  <div class="section-label">Features</div>
+  <h2>Everything you need.<br>Nothing you don't.</h2>
+  <p class="section-desc">Built for people who actually train. Fast logging, smart generation, real progress tracking.</p>
+  <div class="features-grid">
+    <article class="feature-card">
+      <div class="feature-icon blue"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+      <h3>Workout Logger</h3>
+      <p>Log sets, reps, weight, and rest periods. Track warm-up sets separately. See your personal records and history for every exercise right where you need them.</p>
+    </article>
+    <article class="feature-card">
+      <div class="feature-icon purple"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+      <h3>Smart Workout Generation</h3>
+      <p>AI-powered Smart Rotation creates routines from your profile — experience level, goals, equipment, and schedule. Push, pull, legs — it handles the programming.</p>
+    </article>
+    <article class="feature-card">
+      <div class="feature-icon green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+      <h3>Progress Tracking</h3>
+      <p>Strength curves, personal records, weekly volume, active time, and streaks. See how you're actually progressing with data from your real sessions.</p>
+    </article>
+    <article class="feature-card">
+      <div class="feature-icon blue"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg></div>
+      <h3>Equipment Config</h3>
+      <p>Tell the app exactly what you have — dumbbells with weight ranges, barbells with plates, cables, bench, pull-up bar. Workouts only use what's available to you.</p>
+    </article>
+    <article class="feature-card">
+      <div class="feature-icon purple"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+      <h3>Reps in Reserve</h3>
+      <p>Track effort with RIR after each exercise — from max effort to very easy. The app uses this to understand your intensity and adjust future suggestions.</p>
+    </article>
+    <article class="feature-card">
+      <div class="feature-icon green"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <h3>Free. No Catch.</h3>
+      <p>No premium tier. No trial period. No ads. No data collection. This is a passion project built by someone who uses it daily, not a subscription business.</p>
+    </article>
+  </div>
+</section>
+
+<section id="how" class="reveal">
+  <div class="section-label">How it works</div>
+  <h2>Set up once. Train forever.</h2>
+  <p class="section-desc">One minute of setup gives you personalized workouts for as long as you train.</p>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <h3>Configure your profile</h3>
+      <p>Set your experience level, primary goal (strength, hypertrophy, or endurance), weekly frequency, session duration, and available equipment. Takes about a minute.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <h3>Generate or build</h3>
+      <p>Use Smart Rotation to auto-generate a weekly routine, or create your own templates. Either way, just hit Start Workout when you're ready.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <h3>Log and progress</h3>
+      <p>Track every set during your session. Log your reps in reserve. Watch your strength curves climb. The more data you give it, the smarter your workouts become.</p>
+    </div>
+  </div>
+</section>
+
+<section class="story-section reveal">
+  <div class="section-label">Why this exists</div>
+  <h2>Built out of frustration.</h2>
+  <div class="story-content">
+    <p>I wanted to build a consistent workout routine. So I tried the apps everyone recommends. They all wanted <strong>$15 to $30 per month</strong> just to log sets and reps.</p>
+    <p>I'm a developer. So I built my own. <strong>Fit Project started as a personal tool</strong> — something I use every single day at the gym. It does exactly what I needed: log workouts quickly, track my progress over time, and generate smart routines based on what I've actually been doing.</p>
+    <p>Now I'm putting it out there for anyone who wants the same thing. <strong>No venture capital. No monetization plan. No catch.</strong> Just a workout app that works.</p>
+  </div>
+</section>
+
+<section id="faq" class="reveal">
+  <div class="section-label">FAQ</div>
+  <h2>Common questions</h2>
+  <p class="section-desc">Straight answers.</p>
+  <div class="faq-list">
+    <div class="faq-item open">
+      <div class="faq-q">Is Fit Project really free?<span class="faq-toggle">+</span></div>
+      <div class="faq-a">Yes. Completely free. No subscription, no premium tier, no in-app purchases, no ads. Fit Project was built as a personal project by a developer who was tired of paying monthly fees to log workouts. There is no plan to charge for it.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How does Smart Rotation work?<span class="faq-toggle">+</span></div>
+      <div class="faq-a">Smart Rotation generates your weekly workout plan based on your profile settings — experience level, primary goal, available equipment, weekly frequency (2-7 days), and session duration (15-120 minutes). It creates a balanced split (push, pull, lower body, etc.) and rotates through it, factoring in what muscle groups you've recently trained and your progression over time.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What can I track during a workout?<span class="faq-toggle">+</span></div>
+      <div class="faq-a">For each exercise you can track sets (including warm-up sets), reps, weight, and rest periods. After completing an exercise, you rate your effort using Reps in Reserve (RIR). The app also tracks your total session time, total volume, personal records, and shows your strength curve progression over time.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What data do you collect?<span class="faq-toggle">+</span></div>
+      <div class="faq-a">Fit Project is privacy-first. Your workout data is not sold to advertisers, shared with third parties, or used for tracking. There are no analytics trackers, no ads, no data brokers. Your fitness data is yours alone.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Can I use my own workouts instead of generated ones?<span class="faq-toggle">+</span></div>
+      <div class="faq-a">Absolutely. You can create custom workout templates, save completed workouts as templates, and build your own weekly routine from scratch. The AI generation is there when you want it, but you're never locked into it.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What equipment is supported?<span class="faq-toggle">+</span></div>
+      <div class="faq-a">Fit Project supports bench, barbell (with plate configuration), dumbbells (with custom weight ranges), kettlebells, cables, pull-up bar, and more. You toggle what you have, specify details like your dumbbell range, and the app only generates workouts using equipment available to you.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What platforms is Fit Project available on?<span class="faq-toggle">+</span></div>
+      <div class="faq-a">Fit Project is launching on both iOS (Apple App Store) and Android (Google Play Store). Both versions are completely free.</div>
+    </div>
+  </div>
+</section>
+
+<section id="download" class="final-cta reveal">
+  <h2>Start your project.</h2>
+  <p>Free on iOS and Android. No account required to get started.</p>
+  <div class="hero-cta">
+    <a href="#" class="btn-primary">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      App Store
+    </a>
+    <a href="#" class="btn-primary" style="background:var(--white);color:var(--bg-deep);box-shadow:none;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.06 1.47L13.62 12 3.06 22.53c-.33-.2-.56-.61-.56-1.03V2.5c0-.42.23-.83.56-1.03zm1.38-1l11.45 6.61-2.53 2.53L4.44.47zM4.44 23.53l8.92-8.92 2.53 2.53L4.44 23.53zm14.15-8.73l-2.92-1.69-2.77 2.77 2.77 2.77 2.92-1.69c.82-.47.82-1.69 0-2.16z"/></svg>
+      Google Play
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Fit Project. Built with purpose, not profit.</p>
+  <div class="footer-links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Contact</a>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
