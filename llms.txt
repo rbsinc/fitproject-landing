@@ -2,7 +2,7 @@
 
 > A free, privacy-first workout logger with AI-powered smart workout generation. Available on iOS and Android.
 
-Fit Project is a mobile workout app that lets users log workouts and receive AI-generated routines based on their profile and training history. It is completely free with no subscription, no ads, no in-app purchases, and no data collection.
+Fit Project is a mobile workout app that lets users log workouts and receive AI-generated routines based on their profile and training history. It is free to use with no subscription required. User data is never sold or shared.
 
 ## Core Features
 
@@ -16,11 +16,11 @@ Fit Project is a mobile workout app that lets users log workouts and receive AI-
 
 ## Privacy
 
-Fit Project does not sell user data, share data with third parties, use analytics trackers, or display ads. User workout data is private.
+Fit Project does not sell user data or share data with third parties. User workout data is private.
 
 ## Pricing
 
-Fit Project is completely free. There is no subscription, no premium tier, no in-app purchases, and no planned monetization. It is a passion project built by an independent developer.
+Fit Project is free to use. There is no subscription required to access core features including workout logging and smart workout generation. It is a passion project built by an independent developer.
 
 ## Platforms
 
