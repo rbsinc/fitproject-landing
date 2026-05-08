@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Fit Project — Registro de Entrenamientos Gratis y Generador de Rutinas con IA | Sin Suscripción",
-    "description": "Fit Project es un registro de entrenamientos gratuito y orientado a la privacidad, con generación inteligente de rutinas con IA basada en tu perfil e historial de entrenamiento. Registra series, repeticiones y peso. Obtén rutinas personalizadas. Sin suscripción. Disponible en iOS y Android.",
+    "title": "Fit Project — Registro de Entrenamientos Gratis con Smart Rotation | Sin Suscripción",
+    "description": "Fit Project es un registro de entrenamientos gratuito y orientado a la privacidad, con Smart Rotation — generación adaptativa de rutinas basada en tu perfil e historial de entrenamiento. Registra series, repeticiones y peso. Obtén rutinas personalizadas. Sin suscripción. Disponible en iOS y Android.",
     "og_title": "Fit Project — Tu Registro de Entrenamientos Gratuito y Privado",
-    "og_description": "Registra entrenamientos. Obtén rutinas generadas por IA basadas en tu historial. Sin suscripción, sin venta de datos. Gratis en iOS y Android.",
-    "twitter_title": "Fit Project — Registro de Entrenamientos Gratis y Generador de Rutinas con IA",
+    "og_description": "Registra entrenamientos. Obtén rutinas adaptativas basadas en tu historial. Sin suscripción, sin venta de datos. Gratis en iOS y Android.",
+    "twitter_title": "Fit Project — Registro de Entrenamientos Gratis con Smart Rotation",
     "twitter_description": "Registra entrenamientos y obtén rutinas inteligentes y personalizadas. Gratis. Privado. Sin suscripción."
   },
   "nav": {
@@ -16,14 +16,14 @@
   "hero": {
     "badge": "Próximamente en iOS y Android",
     "title": "Tu fitness.<br>Tu <span class='highlight'>proyecto</span>.",
-    "sub": "Un registro de entrenamientos gratuito con generación inteligente de rutinas impulsada por IA. Registra series, sigue tu progreso y obtén entrenamientos personalizados basados en tu historial. Sin suscripción. Sin venta de datos. Creado por alguien que realmente lo usa.",
+    "sub": "Un registro de entrenamientos gratuito con Smart Rotation — rutinas adaptativas creadas a partir de tu historial de entrenamiento. Registra series, sigue tu progreso y obtén entrenamientos personalizados. Sin suscripción. Sin venta de datos. Creado por alguien que realmente lo usa.",
     "cta_download": "Descargar Gratis",
     "cta_features": "Ver características"
   },
   "trust": {
     "privacy": "Privacidad primero — tus datos son tuyos",
     "free": "Gratis — sin suscripción requerida",
-    "ai": "Rutinas inteligentes con IA a partir de tu historial de entrenamiento"
+    "ai": "Rutinas adaptativas a partir de tu historial de entrenamiento"
   },
   "features": {
     "label": "Características",
@@ -32,7 +32,7 @@
     "logger_title": "Registro de Entrenamientos",
     "logger_desc": "Registra series, repeticiones, peso y períodos de descanso. Lleva un registro de las series de calentamiento por separado. Consulta tus récords personales y el historial de cada ejercicio justo donde los necesitas.",
     "smart_title": "Generación Inteligente de Rutinas",
-    "smart_desc": "Smart Rotation, impulsada por IA, crea rutinas a partir de tu perfil — nivel de experiencia, objetivos, equipamiento y horario. Empuje, jalón, piernas — se encarga de la programación.",
+    "smart_desc": "Smart Rotation crea rutinas a partir de tu perfil — nivel de experiencia, objetivos, equipamiento y horario. Empuje, jalón, piernas — se encarga de la programación.",
     "progress_title": "Seguimiento del Progreso",
     "progress_desc": "Curvas de fuerza, récords personales, volumen semanal, tiempo activo y rachas. Observa cómo progresas realmente con datos de tus sesiones.",
     "equipment_title": "Configuración de Equipamiento",
@@ -73,7 +73,7 @@
     "q4": "¿Qué datos recopilan?",
     "a4": "Fit Project prioriza la privacidad. Tus datos de entrenamiento nunca se venden a anunciantes ni se comparten con terceros. Tus datos de fitness son solo tuyos.",
     "q5": "¿Puedo usar mis propios entrenamientos en lugar de los generados?",
-    "a5": "Por supuesto. Puedes crear plantillas de entrenamiento personalizadas, guardar entrenamientos completados como plantillas y armar tu propia rutina semanal desde cero. La generación con IA está ahí cuando la quieras, pero nunca estás obligado a usarla.",
+    "a5": "Por supuesto. Puedes crear plantillas de entrenamiento personalizadas, guardar entrenamientos completados como plantillas y armar tu propia rutina semanal desde cero. Smart Rotation está ahí cuando la quieras, pero nunca estás obligado a usarla.",
     "q6": "¿Qué equipamiento es compatible?",
     "a6": "Fit Project es compatible con banco, barra (con configuración de discos), mancuernas (con rangos de peso personalizados), kettlebells, cables, barra de dominadas y más. Activas lo que tienes, especificas detalles como el rango de tus mancuernas, y la app solo genera entrenamientos con el equipamiento que tienes disponible.",
     "q7": "¿En qué plataformas está disponible Fit Project?",

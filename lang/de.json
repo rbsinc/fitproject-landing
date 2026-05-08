@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Fit Project — Kostenloses Trainings-Logbuch & KI-Trainingsplan-Generator | Kein Abo",
-    "description": "Fit Project ist ein kostenloses, datenschutzorientiertes Trainings-Logbuch mit intelligenter KI-Trainingsplan-Erstellung basierend auf deinem Profil und deiner Trainingshistorie. Erfasse Sätze, Wiederholungen und Gewicht. Erhalte personalisierte Routinen. Keine Abogebühren. Verfügbar auf iOS und Android.",
+    "title": "Fit Project — Kostenloses Trainings-Logbuch mit Smart Rotation | Kein Abo",
+    "description": "Fit Project ist ein kostenloses, datenschutzorientiertes Trainings-Logbuch mit Smart Rotation — adaptive Trainingsplan-Erstellung basierend auf deinem Profil und deiner Trainingshistorie. Erfasse Sätze, Wiederholungen und Gewicht. Erhalte personalisierte Routinen. Keine Abogebühren. Verfügbar auf iOS und Android.",
     "og_title": "Fit Project — Dein kostenloses, privates Trainings-Logbuch",
-    "og_description": "Trainings loggen. KI-generierte Routinen basierend auf deiner Historie. Kein Abo, kein Datenverkauf. Kostenlos auf iOS und Android.",
-    "twitter_title": "Fit Project — Kostenloses Trainings-Logbuch & KI-Trainingsplan-Generator",
+    "og_description": "Trainings loggen. Adaptive Routinen basierend auf deiner Historie. Kein Abo, kein Datenverkauf. Kostenlos auf iOS und Android.",
+    "twitter_title": "Fit Project — Kostenloses Trainings-Logbuch mit Smart Rotation",
     "twitter_description": "Trainings tracken und smarte, personalisierte Routinen erhalten. Kostenlos. Privat. Kein Abo."
   },
   "nav": {
@@ -16,14 +16,14 @@
   "hero": {
     "badge": "Bald verfügbar auf iOS & Android",
     "title": "Dein Training.<br>Dein <span class='highlight'>Projekt</span>.",
-    "sub": "Ein kostenloses Trainings-Logbuch mit KI-gest\u00fctzter intelligenter Routinen-Erstellung. S\u00e4tze loggen, Fortschritte verfolgen und personalisierte Workouts basierend auf deiner Historie erhalten. Kein Abo. Kein Datenverkauf. Gebaut von jemandem, der es selbst nutzt.",
+    "sub": "Ein kostenloses Trainings-Logbuch mit Smart Rotation \u2014 adaptive Routinen, basierend auf deiner Trainingshistorie. S\u00e4tze loggen, Fortschritte verfolgen und personalisierte Workouts erhalten. Kein Abo. Kein Datenverkauf. Gebaut von jemandem, der es selbst nutzt.",
     "cta_download": "Kostenlos herunterladen",
     "cta_features": "Funktionen ansehen"
   },
   "trust": {
     "privacy": "Datenschutz zuerst — deine Daten gehören dir",
     "free": "Kostenlos nutzbar \u2014 kein Abo erforderlich",
-    "ai": "Intelligente KI-Routinen aus deiner Trainingshistorie"
+    "ai": "Adaptive Routinen aus deiner Trainingshistorie"
   },
   "features": {
     "label": "Funktionen",
@@ -32,7 +32,7 @@
     "logger_title": "Trainings-Logbuch",
     "logger_desc": "Erfasse Sätze, Wiederholungen, Gewicht und Pausenzeiten. Tracke Aufwärmsätze separat. Sieh deine persönlichen Rekorde und die Historie jeder Übung genau dort, wo du sie brauchst.",
     "smart_title": "Intelligente Trainingsplan-Erstellung",
-    "smart_desc": "Die KI-gestützte Smart Rotation erstellt Routinen aus deinem Profil — Erfahrungsstufe, Ziele, Ausstattung und Zeitplan. Push, Pull, Beine — die Programmierung wird für dich übernommen.",
+    "smart_desc": "Smart Rotation erstellt Routinen aus deinem Profil — Erfahrungsstufe, Ziele, Ausstattung und Zeitplan. Push, Pull, Beine — die Programmierung wird für dich übernommen.",
     "progress_title": "Fortschrittsverfolgung",
     "progress_desc": "Kraftkurven, persönliche Rekorde, Wochenvolumen, aktive Zeit und Serien. Sieh, wie du dich tatsächlich entwickelst — mit Daten aus deinen echten Einheiten.",
     "equipment_title": "Geräte-Konfiguration",
@@ -73,7 +73,7 @@
     "q4": "Welche Daten werden erfasst?",
     "a4": "Fit Project stellt Datenschutz an erste Stelle. Deine Trainingsdaten werden niemals an Werbetreibende verkauft oder mit Dritten geteilt. Deine Fitnessdaten geh\u00f6ren dir allein.",
     "q5": "Kann ich eigene Workouts statt der generierten verwenden?",
-    "a5": "Absolut. Du kannst eigene Trainingsvorlagen erstellen, abgeschlossene Workouts als Vorlagen speichern und deine eigene Wochenroutine von Grund auf zusammenstellen. Die KI-Generierung ist da, wenn du sie brauchst, aber du bist nie darauf festgelegt.",
+    "a5": "Absolut. Du kannst eigene Trainingsvorlagen erstellen, abgeschlossene Workouts als Vorlagen speichern und deine eigene Wochenroutine von Grund auf zusammenstellen. Smart Rotation ist da, wenn du sie brauchst, aber du bist nie darauf festgelegt.",
     "q6": "Welche Geräte werden unterstützt?",
     "a6": "Fit Project unterstützt Bank, Langhantel (mit Scheiben-Konfiguration), Kurzhanteln (mit individuellen Gewichtsbereichen), Kettlebells, Kabelzüge, Klimmzugstange und mehr. Du aktivierst, was du hast, gibst Details wie deinen Kurzhantel-Bereich an, und die App generiert nur Workouts mit Geräten, die dir zur Verfügung stehen.",
     "q7": "Auf welchen Plattformen ist Fit Project verfügbar?",

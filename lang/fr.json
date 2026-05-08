@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Fit Project — Journal d'entraînement gratuit & générateur de séances par IA | Sans abonnement",
-    "description": "Fit Project est un journal d'entraînement gratuit axé sur la confidentialité, avec génération intelligente de séances par IA basée sur votre profil et votre historique d'entraînement. Suivez vos séries, répétitions et charges. Obtenez des programmes personnalisés. Sans abonnement. Disponible sur iOS et Android.",
+    "title": "Fit Project — Journal d'entraînement gratuit avec Smart Rotation | Sans abonnement",
+    "description": "Fit Project est un journal d'entraînement gratuit axé sur la confidentialité, avec Smart Rotation — génération adaptative de séances basée sur votre profil et votre historique d'entraînement. Suivez vos séries, répétitions et charges. Obtenez des programmes personnalisés. Sans abonnement. Disponible sur iOS et Android.",
     "og_title": "Fit Project — Votre journal d'entraînement gratuit et confidentiel",
-    "og_description": "Enregistrez vos séances. Obtenez des programmes générés par IA selon votre historique. Sans abonnement, sans revente de données. Gratuit sur iOS et Android.",
-    "twitter_title": "Fit Project — Journal d'entraînement gratuit & générateur de séances par IA",
+    "og_description": "Enregistrez vos séances. Obtenez des programmes adaptatifs selon votre historique. Sans abonnement, sans revente de données. Gratuit sur iOS et Android.",
+    "twitter_title": "Fit Project — Journal d'entraînement gratuit avec Smart Rotation",
     "twitter_description": "Suivez vos entraînements et obtenez des programmes personnalisés et intelligents. Gratuit. Confidentiel. Sans abonnement."
   },
   "nav": {
@@ -16,14 +16,14 @@
   "hero": {
     "badge": "Bientôt disponible sur iOS & Android",
     "title": "Votre forme.<br>Votre <span class='highlight'>projet</span>.",
-    "sub": "Un journal d'entraînement gratuit avec génération intelligente de programmes par IA. Enregistrez vos séries, suivez vos progrès et obtenez des séances personnalisées basées sur votre historique. Sans abonnement. Sans revente de données. Créé par quelqu'un qui l'utilise vraiment.",
+    "sub": "Un journal d'entraînement gratuit avec Smart Rotation — des programmes adaptatifs construits à partir de votre historique d'entraînement. Enregistrez vos séries, suivez vos progrès et obtenez des séances personnalisées. Sans abonnement. Sans revente de données. Créé par quelqu'un qui l'utilise vraiment.",
     "cta_download": "Télécharger gratuitement",
     "cta_features": "Voir les fonctionnalités"
   },
   "trust": {
     "privacy": "Confidentialité avant tout — vos données restent les vôtres",
     "free": "Gratuit — sans abonnement requis",
-    "ai": "Programmes IA intelligents basés sur votre historique d'entraînement"
+    "ai": "Programmes adaptatifs basés sur votre historique d'entraînement"
   },
   "features": {
     "label": "Fonctionnalités",
@@ -32,7 +32,7 @@
     "logger_title": "Journal d'entraînement",
     "logger_desc": "Enregistrez vos séries, répétitions, charges et temps de repos. Suivez vos séries d'échauffement séparément. Consultez vos records personnels et votre historique pour chaque exercice, là où vous en avez besoin.",
     "smart_title": "Génération intelligente de séances",
-    "smart_desc": "Smart Rotation, propulsé par l'IA, crée des programmes à partir de votre profil — niveau d'expérience, objectifs, équipement et emploi du temps. Push, pull, jambes — l'appli gère la programmation.",
+    "smart_desc": "Smart Rotation crée des programmes à partir de votre profil — niveau d'expérience, objectifs, équipement et emploi du temps. Push, pull, jambes — l'appli gère la programmation.",
     "progress_title": "Suivi de progression",
     "progress_desc": "Courbes de force, records personnels, volume hebdomadaire, temps actif et séries consécutives. Voyez comment vous progressez réellement grâce aux données de vos vraies séances.",
     "equipment_title": "Configuration de l'équipement",
@@ -73,7 +73,7 @@
     "q4": "Quelles données collectez-vous ?",
     "a4": "Fit Project place la confidentialité au premier plan. Vos données d'entraînement ne sont jamais vendues à des annonceurs ni partagées avec des tiers. Vos données de remise en forme n'appartiennent qu'à vous.",
     "q5": "Puis-je utiliser mes propres séances au lieu de celles générées ?",
-    "a5": "Absolument. Vous pouvez créer des modèles de séances personnalisés, enregistrer des séances terminées comme modèles et construire votre propre programme hebdomadaire de zéro. La génération par IA est là quand vous en avez besoin, mais vous n'y êtes jamais enfermé.",
+    "a5": "Absolument. Vous pouvez créer des modèles de séances personnalisés, enregistrer des séances terminées comme modèles et construire votre propre programme hebdomadaire de zéro. Smart Rotation est là quand vous en avez besoin, mais vous n'y êtes jamais enfermé.",
     "q6": "Quel équipement est pris en charge ?",
     "a6": "Fit Project prend en charge le banc, la barre (avec configuration des disques), les haltères (avec plages de poids personnalisées), les kettlebells, les câbles, la barre de traction et bien plus. Vous activez ce que vous possédez, précisez des détails comme votre plage d'haltères, et l'appli ne génère que des séances utilisant l'équipement à votre disposition.",
     "q7": "Sur quelles plateformes Fit Project est-il disponible ?",

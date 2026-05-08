@@ -1,6 +1,6 @@
 # ⚡ Fit Project
 
-**A free, privacy-first workout logger with AI-powered smart workout generation.**
+**A free, privacy-first workout logger with Smart Rotation — adaptive workout generation.**
 
 No subscription. No ads. No data selling. Just a workout app that works.
 
@@ -16,7 +16,7 @@ Fit Project is a mobile workout app built for people who want to train consisten
 
 **Workout Logger** — Log sets, reps, weight, and rest periods with a fast interface designed for use at the gym. Track warm-up sets separately and see your personal records for every exercise.
 
-**Smart Workout Generation** — AI-powered Smart Rotation creates personalized routines based on your experience level, goals (strength, hypertrophy, endurance), weekly frequency (2–7 days), session duration (15–120 min), and available equipment. It generates balanced push/pull/legs splits and adapts to your training history.
+**Smart Workout Generation** — Smart Rotation creates personalized routines based on your experience level, goals (strength, hypertrophy, endurance), weekly frequency (2–7 days), session duration (15–120 min), and available equipment. It generates balanced push/pull/legs splits and adapts to your training history.
 
 **Progress Tracking** — Strength curves over time, personal records, weekly volume, active training time, and weekly streaks. Real data from real sessions.
 
@@ -24,7 +24,7 @@ Fit Project is a mobile workout app built for people who want to train consisten
 
 **Reps in Reserve (RIR)** — Rate your effort after each exercise from max effort to very easy. The app uses this to understand your intensity and adjust future suggestions.
 
-**Custom Templates** — Create your own workout templates, save completed workouts as templates, or build a weekly routine from scratch. Use AI generation when you want it, skip it when you don't.
+**Custom Templates** — Create your own workout templates, save completed workouts as templates, or build a weekly routine from scratch. Use Smart Rotation when you want it, skip it when you don't.
 
 ## Privacy
 

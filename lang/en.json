@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Fit Project — Free Workout Logger & AI Workout Generator | No Subscription",
-    "description": "Fit Project is a free, privacy-first workout logger with smart AI workout generation based on your profile and training history. Track sets, reps, and weight. Get personalized routines. No subscription fees. Available on iOS and Android.",
+    "title": "Fit Project — Free Workout Logger with Smart Rotation | No Subscription",
+    "description": "Fit Project is a free, privacy-first workout logger with Smart Rotation — adaptive workout generation based on your profile and training history. Track sets, reps, and weight. Get personalized routines. No subscription fees. Available on iOS and Android.",
     "og_title": "Fit Project — Your Free, Private Workout Logger",
-    "og_description": "Log workouts. Get AI-generated routines based on your history. No subscription, no data selling. Free on iOS and Android.",
-    "twitter_title": "Fit Project — Free Workout Logger & AI Workout Generator",
+    "og_description": "Log workouts. Get adaptive routines based on your history. No subscription, no data selling. Free on iOS and Android.",
+    "twitter_title": "Fit Project — Free Workout Logger with Smart Rotation",
     "twitter_description": "Track workouts and get smart, personalized routines. Free. Private. No subscription."
   },
   "nav": {
@@ -16,14 +16,14 @@
   "hero": {
     "badge": "Coming soon on iOS & Android",
     "title": "Your fitness.<br>Your <span class='highlight'>project</span>.",
-    "sub": "A free workout logger with AI-powered smart routine generation. Log sets, track progress, and get personalized workouts based on your history. No subscription. No data selling. Built by someone who actually uses it.",
+    "sub": "A free workout logger with Smart Rotation — adaptive routines built from your training history. Log sets, track progress, and get personalized workouts. No subscription. No data selling. Built by someone who actually uses it.",
     "cta_download": "Download Free",
     "cta_features": "See features"
   },
   "trust": {
     "privacy": "Privacy-first — your data stays yours",
     "free": "Free to use — no subscription required",
-    "ai": "Smart AI routines from your training history"
+    "ai": "Adaptive routines from your training history"
   },
   "features": {
     "label": "Features",
@@ -32,7 +32,7 @@
     "logger_title": "Workout Logger",
     "logger_desc": "Log sets, reps, weight, and rest periods. Track warm-up sets separately. See your personal records and history for every exercise right where you need them.",
     "smart_title": "Smart Workout Generation",
-    "smart_desc": "AI-powered Smart Rotation creates routines from your profile — experience level, goals, equipment, and schedule. Push, pull, legs — it handles the programming.",
+    "smart_desc": "Smart Rotation creates routines from your profile — experience level, goals, equipment, and schedule. Push, pull, legs — it handles the programming.",
     "progress_title": "Progress Tracking",
     "progress_desc": "Strength curves, personal records, weekly volume, active time, and streaks. See how you're actually progressing with data from your real sessions.",
     "equipment_title": "Equipment Config",
@@ -73,7 +73,7 @@
     "q4": "What data do you collect?",
     "a4": "Fit Project is privacy-first. Your workout data is never sold to advertisers or shared with third parties. Your fitness data is yours alone.",
     "q5": "Can I use my own workouts instead of generated ones?",
-    "a5": "Absolutely. You can create custom workout templates, save completed workouts as templates, and build your own weekly routine from scratch. The AI generation is there when you want it, but you're never locked into it.",
+    "a5": "Absolutely. You can create custom workout templates, save completed workouts as templates, and build your own weekly routine from scratch. Smart Rotation is there when you want it, but you're never locked into it.",
     "q6": "What equipment is supported?",
     "a6": "Fit Project supports bench, barbell (with plate configuration), dumbbells (with custom weight ranges), kettlebells, cables, pull-up bar, and more. You toggle what you have, specify details like your dumbbell range, and the app only generates workouts using equipment available to you.",
     "q7": "What platforms is Fit Project available on?",
