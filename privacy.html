@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Privacy Policy — Fit Project</title>
+  <meta name="description" content="Fit Project does not collect or share any of your data. Read the full privacy policy.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Fit Project Privacy Policy">
+  <meta property="og:description" content="No data collection. No third parties. Read the policy.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fitproject.app/privacy">
+  <meta property="og:image" content="https://fitproject.app/og-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fit Project Privacy Policy">
+  <meta name="twitter:description" content="No data collection. No third parties. Read the policy.">
+
+  <link rel="canonical" href="https://fitproject.app/privacy">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+  <!-- hreflang for i18n SEO -->
+  <link rel="alternate" hreflang="en" href="https://fitproject.app/privacy">
+  <link rel="alternate" hreflang="es" href="https://fitproject.app/privacy?lang=es">
+  <link rel="alternate" hreflang="pt" href="https://fitproject.app/privacy?lang=pt">
+  <link rel="alternate" hreflang="fr" href="https://fitproject.app/privacy?lang=fr">
+  <link rel="alternate" hreflang="de" href="https://fitproject.app/privacy?lang=de">
+  <link rel="alternate" hreflang="x-default" href="https://fitproject.app/privacy">
+
+  <!-- FOUC prevention: hide body until translations are applied for non-English -->
+  <script>
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      var lang = params.get('lang');
+      if (lang && lang !== 'en') {
+        document.documentElement.classList.add('i18n-loading');
+      }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-deep: #080c14;
+      --bg-card: #0d1524;
+      --bg-card-hover: #111d30;
+      --bg-surface: #142038;
+      --blue-primary: #2563eb;
+      --blue-bright: #3b82f6;
+      --blue-glow: rgba(37, 99, 235, 0.15);
+      --blue-subtle: rgba(37, 99, 235, 0.08);
+      --green-accent: #22c55e;
+      --green-glow: rgba(34, 197, 94, 0.15);
+      --white: #f0f2f5;
+      --gray-100: #d1d5db;
+      --gray-300: #9ca3af;
+      --gray-500: #6b7280;
+      --gray-700: #374151;
+      --gray-900: #1a2332;
+      --font-main: 'Outfit', sans-serif;
+      --font-mono: 'IBM Plex Mono', monospace;
+      --radius: 16px;
+      --radius-sm: 10px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    html.i18n-loading body { opacity: 0; }
+
+    body {
+      font-family: var(--font-main);
+      background: var(--bg-deep);
+      color: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: opacity 0.15s ease;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 16px 40px;
+      display: flex; justify-content: space-between; align-items: center;
+      backdrop-filter: blur(24px) saturate(1.4);
+      background: rgba(8, 12, 20, 0.85);
+      border-bottom: 1px solid rgba(37, 99, 235, 0.08);
+    }
+
+    .logo {
+      display: flex; align-items: center; gap: 12px;
+      font-weight: 700; font-size: 1.15rem; letter-spacing: -0.02em;
+      text-decoration: none; color: var(--white);
+    }
+
+    .logo-icon {
+      width: 36px; height: 36px;
+      background: var(--blue-primary); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+    }
+
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a {
+      color: var(--gray-300); text-decoration: none; font-size: 0.9rem;
+      font-weight: 500; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--white); }
+
+    /* LANGUAGE SWITCHER */
+    .lang-switcher { position: relative; }
+    .lang-btn {
+      display: flex; align-items: center; gap: 6px;
+      background: var(--bg-surface); border: 1px solid var(--gray-700);
+      color: var(--gray-300); padding: 7px 14px; border-radius: 8px;
+      font-size: 0.82rem; font-weight: 600; cursor: pointer;
+      font-family: var(--font-main); transition: all 0.2s;
+      letter-spacing: 0.03em;
+    }
+    .lang-btn:hover { border-color: var(--gray-500); color: var(--white); }
+    .lang-btn svg { width: 12px; height: 12px; transition: transform 0.2s; }
+    .lang-switcher.open .lang-btn svg { transform: rotate(180deg); }
+    .lang-dropdown {
+      position: absolute; top: calc(100% + 6px); right: 0;
+      background: var(--bg-card); border: 1px solid var(--gray-700);
+      border-radius: 10px; padding: 6px; min-width: 150px;
+      opacity: 0; visibility: hidden; transform: translateY(-4px);
+      transition: all 0.2s ease;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.4);
+    }
+    .lang-switcher.open .lang-dropdown {
+      opacity: 1; visibility: visible; transform: translateY(0);
+    }
+    .lang-option {
+      display: block; width: 100%; text-align: left;
+      background: none; border: none; color: var(--gray-300);
+      padding: 8px 12px; border-radius: 6px; font-size: 0.85rem;
+      font-family: var(--font-main); cursor: pointer; transition: all 0.15s;
+    }
+    .lang-option:hover { background: var(--bg-surface); color: var(--white); }
+    .lang-option.active { color: var(--blue-bright); }
+
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--blue-primary); color: white;
+      padding: 12px 28px; border-radius: 100px;
+      font-weight: 600; font-size: 0.95rem; text-decoration: none;
+      border: none; cursor: pointer; font-family: var(--font-main);
+      transition: all 0.25s ease;
+      box-shadow: 0 0 24px rgba(37, 99, 235, 0.25);
+    }
+    .btn-primary:hover {
+      background: #3b82f6; transform: translateY(-1px);
+      box-shadow: 0 4px 32px rgba(37, 99, 235, 0.4);
+    }
+
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; color: var(--white);
+      padding: 12px 28px; border-radius: 100px;
+      font-weight: 500; font-size: 0.95rem; text-decoration: none;
+      border: 1px solid var(--gray-700); cursor: pointer;
+      font-family: var(--font-main); transition: all 0.25s ease;
+    }
+    .btn-outline:hover { border-color: var(--gray-500); background: rgba(255,255,255,0.03); }
+
+    /* PAGE LAYOUT */
+    main {
+      max-width: 720px; margin: 0 auto;
+      padding: 140px 40px 80px; position: relative;
+    }
+    main::before {
+      content: ''; position: absolute; top: 6%; left: 50%;
+      transform: translateX(-50%);
+      width: 600px; height: 400px;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.10) 0%, transparent 70%);
+      pointer-events: none; filter: blur(60px); z-index: -1;
+    }
+
+    .page-label {
+      font-family: var(--font-mono); font-size: 0.78rem; color: var(--blue-bright);
+      letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 14px; font-weight: 500;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 4.5vw, 3.4rem); font-weight: 800;
+      letter-spacing: -0.035em; line-height: 1.08; margin-bottom: 16px;
+    }
+
+    .updated {
+      font-family: var(--font-mono); font-size: 0.85rem;
+      color: var(--gray-500); margin-bottom: 36px;
+    }
+
+    .summary-card {
+      background: var(--bg-card); border: 1px solid rgba(34, 197, 94, 0.18);
+      border-radius: var(--radius); padding: 24px 28px;
+      margin-bottom: 56px;
+    }
+    .summary-label {
+      font-family: var(--font-mono); font-size: 0.75rem;
+      color: var(--green-accent); letter-spacing: 0.06em;
+      text-transform: uppercase; margin-bottom: 10px; font-weight: 500;
+    }
+    .summary-text {
+      color: var(--white); font-size: 1.05rem; line-height: 1.6;
+    }
+
+    .policy-section { margin-bottom: 36px; }
+    .policy-section h2 {
+      font-size: 1.25rem; font-weight: 700; letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+    .policy-section p {
+      color: var(--gray-300); font-size: 0.98rem; line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    .policy-section p:last-child { margin-bottom: 0; }
+
+    .back-cta { margin-top: 64px; }
+
+    /* FOOTER */
+    footer {
+      padding: 36px 40px; border-top: 1px solid rgba(255,255,255,0.04);
+      max-width: 1280px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 16px;
+    }
+    footer p { color: var(--gray-500); font-size: 0.82rem; }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a {
+      color: var(--gray-500); text-decoration: none; font-size: 0.82rem; transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gray-300); }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      nav { padding: 14px 20px; }
+      .nav-links { display: none; }
+      main { padding: 120px 24px 60px; }
+      .summary-card { padding: 20px 22px; }
+      footer { padding: 28px 24px; flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; flex-wrap: wrap; }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="/" class="logo">
+    <div class="logo-icon">⚡</div>
+    Fit Project
+  </a>
+  <div class="nav-links">
+    <a href="/#features" data-i18n="nav.features">Features</a>
+    <a href="/#how" data-i18n="nav.how">How it works</a>
+    <a href="/#faq" data-i18n="nav.faq">FAQ</a>
+    <a href="/#download" class="btn-primary" style="padding: 10px 22px; font-size: 0.85rem;" data-i18n="nav.cta">Get the App</a>
+  </div>
+  <div class="lang-switcher">
+    <button class="lang-btn" aria-label="Select language">
+      <span class="lang-current">EN</span>
+      <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 4.5l3 3 3-3"/></svg>
+    </button>
+    <div class="lang-dropdown">
+      <button class="lang-option active" data-lang="en">English</button>
+      <button class="lang-option" data-lang="es">Español</button>
+      <button class="lang-option" data-lang="pt">Português</button>
+      <button class="lang-option" data-lang="fr">Français</button>
+      <button class="lang-option" data-lang="de">Deutsch</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="page-label" data-i18n="footer.privacy">Privacy Policy</div>
+  <h1 data-i18n="privacy.title">Privacy Policy</h1>
+  <p class="updated" data-i18n="privacy.updated">Last updated: 2026-05-11</p>
+
+  <div class="summary-card">
+    <div class="summary-label" data-i18n="privacy.summary_label">Short version</div>
+    <p class="summary-text" data-i18n="privacy.summary">Fit Project does not collect, store, or share any of your data. Everything stays on your device.</p>
+  </div>
+
+  <section class="policy-section">
+    <h2 data-i18n="privacy.s1_title">1. Who we are</h2>
+    <p data-i18n="privacy.s1_body">Fit Project is an independent app built and operated by a single developer. Contact: support@fitproject.app</p>
+  </section>
+
+  <section class="policy-section">
+    <h2 data-i18n="privacy.s2_title">2. Data we collect</h2>
+    <p data-i18n="privacy.s2_p1">None. All workout data — exercises, sets, reps, weight, rest periods, RIR, equipment configuration, and your profile (experience level, goal, frequency, session duration) — is stored only on your device. We do not have a server, we do not have a copy, and we cannot access it.</p>
+    <p data-i18n="privacy.s2_p2">Fit Project does not require an account. We do not collect your name, email, or any identifier. We do not collect device identifiers, usage analytics, crash reports, or telemetry. There is no third-party SDK in the app for tracking, advertising, or analytics.</p>
+  </section>
+
+  <section class="policy-section">
+    <h2 data-i18n="privacy.s3_title">3. How your data is used</h2>
+    <p data-i18n="privacy.s3_body">Your workout data is used by the app, on your device, to show your workout history, generate routines via Smart Rotation, and track your progress. None of it leaves your device.</p>
+  </section>
+
+  <section class="policy-section">
+    <h2 data-i18n="privacy.s4_title">4. Sharing with third parties</h2>
+    <p data-i18n="privacy.s4_body">We do not sell, share, or transmit your data to any third party. There are no third-party processors with access to your workout data — because there is no server holding any.</p>
+  </section>
+
+  <section class="policy-section">
+    <h2 data-i18n="privacy.s5_title">5. Data retention</h2>
+    <p data-i18n="privacy.s5_body">Your workout data lives on your device for as long as you keep the app installed. Uninstalling the app removes all of it. There is no remote copy to delete.</p>
+  </section>
+
+  <section class="policy-section">
+    <h2 data-i18n="privacy.s6_title">6. Your rights</h2>
+    <p data-i18n="privacy.s6_body">Because we do not hold any of your data, there is nothing for us to access, correct, or delete on your behalf — you retain full control of your data on your device. If you are in the EU/UK, you have rights under GDPR / UK GDPR; in California, under the CCPA. Email support@fitproject.app with any privacy questions.</p>
+  </section>
+
+  <section class="policy-section">
+    <h2 data-i18n="privacy.s7_title">7. Children</h2>
+    <p data-i18n="privacy.s7_body">Fit Project is not directed to children under 13 (or 16 in the EU). We do not knowingly collect data from children — and given the policy above, we do not collect data from anyone.</p>
+  </section>
+
+  <section class="policy-section">
+    <h2 data-i18n="privacy.s8_title">8. Changes to this policy</h2>
+    <p data-i18n="privacy.s8_body">If we materially change this policy (for example, if we ever add cloud sync), we will update the "Last updated" date and notify users in-app where required.</p>
+  </section>
+
+  <section class="policy-section">
+    <h2 data-i18n="privacy.s9_title">9. Contact</h2>
+    <p data-i18n="privacy.s9_body">Privacy questions: support@fitproject.app</p>
+  </section>
+
+  <div class="back-cta">
+    <a href="/" class="btn-outline" data-i18n="privacy.back">← Back to homepage</a>
+  </div>
+</main>
+
+<footer>
+  <p data-i18n="footer.copy">&copy; 2026 Fit Project. Built by someone who trains.</p>
+  <div class="footer-links">
+    <a href="/privacy" data-i18n="footer.privacy">Privacy Policy</a>
+    <a href="/support" data-i18n="footer.support">Support</a>
+    <a href="mailto:info@fitproject.app" data-i18n="footer.contact">Contact</a>
+  </div>
+</footer>
+
+<script>
+  // ── i18n ──
+  (function() {
+    var SUPPORTED = ['en', 'es', 'pt', 'fr', 'de'];
+    var LANG_LABELS = { en: 'EN', es: 'ES', pt: 'PT', fr: 'FR', de: 'DE' };
+
+    function getNestedValue(obj, path) {
+      return path.split('.').reduce(function(o, k) { return o && o[k]; }, obj);
+    }
+
+    function detectLang() {
+      var params = new URLSearchParams(window.location.search);
+      var lang = params.get('lang');
+      if (lang && SUPPORTED.indexOf(lang) !== -1) return lang;
+
+      var stored = localStorage.getItem('fitproject-lang');
+      if (stored && SUPPORTED.indexOf(stored) !== -1) return stored;
+
+      var browserLang = (navigator.language || '').slice(0, 2).toLowerCase();
+      if (SUPPORTED.indexOf(browserLang) !== -1) return browserLang;
+
+      return 'en';
+    }
+
+    function applyTranslations(translations) {
+      document.querySelectorAll('[data-i18n]').forEach(function(el) {
+        var val = getNestedValue(translations, el.getAttribute('data-i18n'));
+        if (val) el.textContent = val;
+      });
+
+      document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+        var val = getNestedValue(translations, el.getAttribute('data-i18n-html'));
+        if (val) el.innerHTML = val;
+      });
+
+      var p = translations.privacy;
+      if (p) {
+        if (p.meta_title) document.title = p.meta_title;
+        var descEl = document.querySelector('meta[name="description"]');
+        if (descEl && p.meta_description) descEl.setAttribute('content', p.meta_description);
+        var ogTitle = document.querySelector('meta[property="og:title"]');
+        if (ogTitle && p.og_title) ogTitle.setAttribute('content', p.og_title);
+        var ogDesc = document.querySelector('meta[property="og:description"]');
+        if (ogDesc && p.og_description) ogDesc.setAttribute('content', p.og_description);
+        var twTitle = document.querySelector('meta[name="twitter:title"]');
+        if (twTitle && p.twitter_title) twTitle.setAttribute('content', p.twitter_title);
+        var twDesc = document.querySelector('meta[name="twitter:description"]');
+        if (twDesc && p.twitter_description) twDesc.setAttribute('content', p.twitter_description);
+      }
+    }
+
+    function setActiveLangOption(lang) {
+      document.querySelectorAll('.lang-option').forEach(function(btn) {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+      });
+      var currentLabel = document.querySelector('.lang-current');
+      if (currentLabel) currentLabel.textContent = LANG_LABELS[lang] || lang.toUpperCase();
+    }
+
+    function showPage() {
+      document.documentElement.classList.remove('i18n-loading');
+    }
+
+    function switchLang(lang) {
+      if (SUPPORTED.indexOf(lang) === -1) lang = 'en';
+      document.documentElement.setAttribute('lang', lang);
+      localStorage.setItem('fitproject-lang', lang);
+      setActiveLangOption(lang);
+
+      var url = new URL(window.location);
+      if (lang === 'en') {
+        url.searchParams.delete('lang');
+      } else {
+        url.searchParams.set('lang', lang);
+      }
+      history.replaceState(null, '', url);
+
+      fetch('/lang/' + lang + '.json')
+        .then(function(r) { return r.json(); })
+        .then(function(data) { applyTranslations(data); showPage(); })
+        .catch(function() { showPage(); });
+    }
+
+    // Language switcher toggle
+    var switcher = document.querySelector('.lang-switcher');
+    var langBtn = document.querySelector('.lang-btn');
+    if (switcher && langBtn) {
+      langBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        switcher.classList.toggle('open');
+      });
+      document.addEventListener('click', function() {
+        switcher.classList.remove('open');
+      });
+      document.querySelectorAll('.lang-option').forEach(function(opt) {
+        opt.addEventListener('click', function(e) {
+          e.stopPropagation();
+          switcher.classList.remove('open');
+          switchLang(this.getAttribute('data-lang'));
+        });
+      });
+    }
+
+    // Init
+    var currentLang = detectLang();
+    setActiveLangOption(currentLang);
+
+    if (currentLang !== 'en') {
+      switchLang(currentLang);
+      setTimeout(showPage, 500);
+    } else {
+      showPage();
+    }
+  })();
+</script>
+
+</body>
+</html>
