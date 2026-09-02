@@ -3,25 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101622">
+  <meta name="apple-itunes-app" content="app-id=6765567148">
   <meta name="robots" content="index,follow">
-  <title>Support — Fit Project</title>
-  <meta name="description" content="Get help with Fit Project. Real replies from a real developer.">
+  <title>Support — FitProject</title>
+  <meta name="description" content="Get help with FitProject. Real replies from a real developer.">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Fit Project Support">
-  <meta property="og:description" content="Need help with Fit Project? Reach out — we reply.">
+  <meta property="og:title" content="FitProject Support">
+  <meta property="og:description" content="Need help with FitProject? Reach out — we reply.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://fitproject.app/support">
+  <meta property="og:site_name" content="FitProject">
   <meta property="og:image" content="https://fitproject.app/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Fit Project Support">
-  <meta name="twitter:description" content="Need help with Fit Project? Reach out — we reply.">
+  <meta name="twitter:title" content="FitProject Support">
+  <meta name="twitter:description" content="Need help with FitProject? Reach out — we reply.">
 
   <link rel="canonical" href="https://fitproject.app/support">
+  <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <!-- hreflang for i18n SEO -->
   <link rel="alternate" hreflang="en" href="https://fitproject.app/support">
@@ -44,30 +53,30 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg-deep: #080c14;
-      --bg-card: #0d1524;
-      --bg-card-hover: #111d30;
-      --bg-surface: #142038;
-      --blue-primary: #2563eb;
-      --blue-bright: #3b82f6;
-      --blue-glow: rgba(37, 99, 235, 0.15);
-      --blue-subtle: rgba(37, 99, 235, 0.08);
-      --green-accent: #22c55e;
-      --green-glow: rgba(34, 197, 94, 0.15);
-      --white: #f0f2f5;
-      --gray-100: #d1d5db;
-      --gray-300: #9ca3af;
-      --gray-500: #6b7280;
-      --gray-700: #374151;
-      --gray-900: #1a2332;
-      --font-main: 'Outfit', sans-serif;
-      --font-mono: 'IBM Plex Mono', monospace;
-      --radius: 16px;
-      --radius-sm: 10px;
+      --bg-deep: #101622;
+      --bg-card: #1b1f28;
+      --bg-card-hover: #20252f;
+      --bg-surface: #232833;
+      --blue-primary: #0e59f2;
+      --blue-bright: #4d86ff;
+      --blue-glow: rgba(14, 89, 242, 0.18);
+      --blue-subtle: rgba(14, 89, 242, 0.12);
+      --green-accent: #23b763;
+      --green-glow: rgba(35, 183, 99, 0.14);
+      --white: #ffffff;
+      --gray-100: #d5dcec;
+      --gray-300: #94a3c8;
+      --gray-500: #6b7a99;
+      --gray-700: #2b3040;
+      --gray-900: #1b1f28;
+      --font-main: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --font-mono: var(--font-main);
+      --radius: 22px;
+      --radius-sm: 12px;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -89,8 +98,8 @@
       padding: 16px 40px;
       display: flex; justify-content: space-between; align-items: center;
       backdrop-filter: blur(24px) saturate(1.4);
-      background: rgba(8, 12, 20, 0.85);
-      border-bottom: 1px solid rgba(37, 99, 235, 0.08);
+      background: rgba(16, 22, 34, 0.82);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
     }
 
     .logo {
@@ -99,11 +108,13 @@
       text-decoration: none; color: var(--white);
     }
 
-    .logo-icon {
-      width: 36px; height: 36px;
-      background: var(--blue-primary); border-radius: 10px;
-      display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+    .logo-tile {
+      width: 34px; height: 34px; border-radius: 9px; flex-shrink: 0;
+      background: linear-gradient(180deg, #3c444f 0%, #0e1623 100%);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.14), 0 2px 8px rgba(0,0,0,0.4);
+      display: flex; align-items: center; justify-content: center;
     }
+    .logo-tile svg { width: 22px; height: 12px; fill: #2f6ff5; }
 
     .nav-links { display: flex; gap: 28px; align-items: center; }
     .nav-links a {
@@ -117,7 +128,7 @@
     .lang-btn {
       display: flex; align-items: center; gap: 6px;
       background: var(--bg-surface); border: 1px solid var(--gray-700);
-      color: var(--gray-300); padding: 7px 14px; border-radius: 8px;
+      color: var(--gray-300); padding: 8px 14px; border-radius: 100px;
       font-size: 0.82rem; font-weight: 600; cursor: pointer;
       font-family: var(--font-main); transition: all 0.2s;
       letter-spacing: 0.03em;
@@ -128,7 +139,7 @@
     .lang-dropdown {
       position: absolute; top: calc(100% + 6px); right: 0;
       background: var(--bg-card); border: 1px solid var(--gray-700);
-      border-radius: 10px; padding: 6px; min-width: 150px;
+      border-radius: 14px; padding: 6px; min-width: 150px;
       opacity: 0; visibility: hidden; transform: translateY(-4px);
       transition: all 0.2s ease;
       box-shadow: 0 12px 32px rgba(0,0,0,0.4);
@@ -148,26 +159,26 @@
     .btn-primary {
       display: inline-flex; align-items: center; gap: 8px;
       background: var(--blue-primary); color: white;
-      padding: 12px 28px; border-radius: 100px;
-      font-weight: 600; font-size: 0.95rem; text-decoration: none;
+      padding: 14px 26px; border-radius: 16px;
+      font-weight: 700; font-size: 1rem; text-decoration: none;
       border: none; cursor: pointer; font-family: var(--font-main);
       transition: all 0.25s ease;
-      box-shadow: 0 0 24px rgba(37, 99, 235, 0.25);
+      box-shadow: 0 0 24px rgba(14, 89, 242, 0.25);
     }
     .btn-primary:hover {
-      background: #3b82f6; transform: translateY(-1px);
-      box-shadow: 0 4px 32px rgba(37, 99, 235, 0.4);
+      background: #2a6ffc; transform: translateY(-1px);
+      box-shadow: 0 4px 32px rgba(14, 89, 242, 0.4);
     }
 
     .btn-outline {
       display: inline-flex; align-items: center; gap: 8px;
-      background: transparent; color: var(--white);
-      padding: 12px 28px; border-radius: 100px;
+      background: var(--bg-card); color: var(--white);
+      padding: 14px 26px; border-radius: 16px;
       font-weight: 500; font-size: 0.95rem; text-decoration: none;
       border: 1px solid var(--gray-700); cursor: pointer;
       font-family: var(--font-main); transition: all 0.25s ease;
     }
-    .btn-outline:hover { border-color: var(--gray-500); background: rgba(255,255,255,0.03); }
+    .btn-outline:hover { border-color: rgba(255,255,255,0.22); background: var(--bg-card-hover); }
 
     /* PAGE LAYOUT */
     main {
@@ -178,13 +189,13 @@
       content: ''; position: absolute; top: 6%; left: 50%;
       transform: translateX(-50%);
       width: 600px; height: 400px;
-      background: radial-gradient(circle, rgba(37, 99, 235, 0.10) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(14, 89, 242, 0.10) 0%, transparent 70%);
       pointer-events: none; filter: blur(60px); z-index: -1;
     }
 
     .page-label {
       font-family: var(--font-mono); font-size: 0.78rem; color: var(--blue-bright);
-      letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 14px; font-weight: 500;
+      letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 14px; font-weight: 700;
     }
 
     h1 {
@@ -198,14 +209,14 @@
     }
 
     .support-card {
-      background: var(--bg-card); border: 1px solid rgba(37, 99, 235, 0.12);
+      background: var(--bg-card); border: 1px solid rgba(14, 89, 242, 0.12);
       border-radius: var(--radius); padding: 32px;
       margin-bottom: 32px;
     }
     .support-card .card-label {
       font-family: var(--font-mono); font-size: 0.75rem;
-      color: var(--blue-bright); letter-spacing: 0.06em;
-      text-transform: uppercase; margin-bottom: 14px; font-weight: 500;
+      color: var(--blue-bright); letter-spacing: 0.14em;
+      text-transform: uppercase; margin-bottom: 14px; font-weight: 700;
     }
     .email-display {
       font-family: var(--font-mono); font-size: 1.25rem;
@@ -290,15 +301,15 @@
 <body>
 
 <nav>
-  <a href="/" class="logo">
-    <div class="logo-icon">⚡</div>
-    Fit Project
+  <a href="/" class="logo" aria-label="FitProject home">
+    <span class="logo-tile"><svg viewBox="40 144 432 224"><rect x="50" y="181" width="46" height="150" rx="14"/><rect x="104" y="154" width="60" height="204" rx="16"/><rect x="168" y="230" width="176" height="52" rx="20"/><rect x="348" y="154" width="60" height="204" rx="16"/><rect x="416" y="181" width="46" height="150" rx="14"/></svg></span>
+    FitProject
   </a>
   <div class="nav-links">
     <a href="/#features" data-i18n="nav.features">Features</a>
     <a href="/#how" data-i18n="nav.how">How it works</a>
     <a href="/#faq" data-i18n="nav.faq">FAQ</a>
-    <a href="/#download" class="btn-primary" style="padding: 10px 22px; font-size: 0.85rem;" data-i18n="nav.cta">Get the App</a>
+    <a href="https://apps.apple.com/us/app/fitproject-workout-log/id6765567148" target="_blank" rel="noopener" class="btn-primary" style="padding: 10px 18px; font-size: 0.88rem; border-radius: 12px; box-shadow: none;" data-i18n="nav.cta">Get the App</a>
   </div>
   <div class="lang-switcher">
     <button class="lang-btn" aria-label="Select language">
@@ -318,7 +329,7 @@
 <main>
   <div class="page-label" data-i18n="footer.support">Support</div>
   <h1 data-i18n="support.title">Need help?</h1>
-  <p class="intro" data-i18n="support.intro">Fit Project is a small, independent project — built and maintained by one developer who uses the app every day. Reach out and you'll get a real reply from a real human, not a ticket bot.</p>
+  <p class="intro" data-i18n="support.intro">FitProject is a small, independent project — built and maintained by one developer who uses the app every day. Reach out and you'll get a real reply from a real human, not a ticket bot.</p>
 
   <div class="support-card">
     <div class="card-label" data-i18n="support.email_label">Email support</div>
@@ -343,7 +354,7 @@
       <a href="/#faq" class="quick-link" data-i18n="support.quick_link">See full FAQ</a>
     </div>
     <ul class="mini-faq-list">
-      <li><a href="/#faq" data-i18n="support.quick_q1">Is Fit Project really free?</a></li>
+      <li><a href="/#faq" data-i18n="support.quick_q1">Is FitProject really free?</a></li>
       <li><a href="/#faq" data-i18n="support.quick_q2">How does Smart Rotation work?</a></li>
       <li><a href="/#faq" data-i18n="support.quick_q3">What data do you collect?</a></li>
     </ul>
@@ -355,7 +366,7 @@
 </main>
 
 <footer>
-  <p data-i18n="footer.copy">&copy; 2026 Fit Project. Built by someone who trains.</p>
+  <p data-i18n="footer.copy">&copy; 2026 FitProject. Built by someone who trains.</p>
   <div class="footer-links">
     <a href="/privacy" data-i18n="footer.privacy">Privacy Policy</a>
     <a href="/support" data-i18n="footer.support">Support</a>

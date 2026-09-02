@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Fit Project — Kostenloses Trainings-Logbuch mit Smart Rotation | Kein Abo",
-    "description": "Fit Project ist ein kostenloses, datenschutzorientiertes Trainings-Logbuch mit Smart Rotation — adaptive Trainingsplan-Erstellung basierend auf deinem Profil und deiner Trainingshistorie. Erfasse Sätze, Wiederholungen und Gewicht. Erhalte personalisierte Routinen. Keine Abogebühren. Verfügbar auf iOS und Android.",
-    "og_title": "Fit Project — Dein kostenloses, privates Trainings-Logbuch",
-    "og_description": "Trainings loggen. Adaptive Routinen basierend auf deiner Historie. Kein Abo, kein Datenverkauf. Kostenlos auf iOS und Android.",
-    "twitter_title": "Fit Project — Kostenloses Trainings-Logbuch mit Smart Rotation",
+    "title": "FitProject — Kostenloses Gym-Trainingslogbuch mit Smart Rotation | Kein Abo",
+    "description": "FitProject ist ein kostenloses, datenschutzorientiertes Trainings-Logbuch mit Smart Rotation — adaptive Routinen aus deiner Ausstattung, deinen Zielen und deiner Trainingshistorie. Erfasse Sätze, Wiederholungen und Gewicht. Keine Abogebühren. Verfügbar für iOS. Android folgt bald.",
+    "og_title": "FitProject — Dein kostenloses, privates Trainings-Logbuch",
+    "og_description": "Trainings loggen. Adaptive Routinen basierend auf deiner Historie. Kein Abo, kein Datenverkauf. Kostenlos für iOS. Android folgt bald.",
+    "twitter_title": "FitProject — Kostenloses Gym-Trainingslogbuch mit Smart Rotation",
     "twitter_description": "Trainings tracken und smarte, personalisierte Routinen erhalten. Kostenlos. Privat. Kein Abo."
   },
   "nav": {
@@ -14,15 +14,15 @@
     "cta": "App herunterladen"
   },
   "hero": {
-    "badge": "Bald verfügbar auf iOS & Android",
+    "badge": "Jetzt verfügbar für iOS",
     "title": "Dein Training.<br>Dein <span class='highlight'>Projekt</span>.",
-    "sub": "Ein kostenloses Trainings-Logbuch mit Smart Rotation \u2014 adaptive Routinen, basierend auf deiner Trainingshistorie. S\u00e4tze loggen, Fortschritte verfolgen und personalisierte Workouts erhalten. Kein Abo. Kein Datenverkauf. Gebaut von jemandem, der es selbst nutzt.",
+    "sub": "Ein kostenloses Trainings-Logbuch mit Smart Rotation — adaptive Routinen, basierend auf deiner Trainingshistorie. Sätze loggen, Fortschritte verfolgen und personalisierte Workouts erhalten. Kein Abo. Kein Datenverkauf. Gebaut von jemandem, der es selbst nutzt.",
     "cta_download": "Kostenlos herunterladen",
     "cta_features": "Funktionen ansehen"
   },
   "trust": {
     "privacy": "Datenschutz zuerst — deine Daten gehören dir",
-    "free": "Kostenlos nutzbar \u2014 kein Abo erforderlich",
+    "free": "Kostenlos nutzbar — kein Abo erforderlich",
     "ai": "Adaptive Routinen aus deiner Trainingshistorie"
   },
   "features": {
@@ -31,8 +31,8 @@
     "desc": "Entwickelt für Leute, die wirklich trainieren. Schnelles Loggen, intelligente Erstellung, echtes Fortschritts-Tracking.",
     "logger_title": "Trainings-Logbuch",
     "logger_desc": "Erfasse Sätze, Wiederholungen, Gewicht und Pausenzeiten. Tracke Aufwärmsätze separat. Sieh deine persönlichen Rekorde und die Historie jeder Übung genau dort, wo du sie brauchst.",
-    "smart_title": "Intelligente Trainingsplan-Erstellung",
-    "smart_desc": "Smart Rotation erstellt Routinen aus deinem Profil — Erfahrungsstufe, Ziele, Ausstattung und Zeitplan. Push, Pull, Beine — die Programmierung wird für dich übernommen.",
+    "smart_title": "Smart Rotation",
+    "smart_desc": "Adaptive Routinen aus deiner Ausstattung, deinen Zielen und deiner Trainingshistorie. Läuft auf deinem Handy: keine KI, keine Blackbox.",
     "progress_title": "Fortschrittsverfolgung",
     "progress_desc": "Kraftkurven, persönliche Rekorde, Wochenvolumen, aktive Zeit und Serien. Sieh, wie du dich tatsächlich entwickelst — mit Daten aus deinen echten Einheiten.",
     "equipment_title": "Geräte-Konfiguration",
@@ -40,7 +40,12 @@
     "rir_title": "Wiederholungen in Reserve (RIR)",
     "rir_desc": "Erfasse deine Anstrengung mit RIR nach jeder Übung — von maximaler Belastung bis sehr leicht. Die App nutzt dies, um deine Intensität zu verstehen und zukünftige Vorschläge anzupassen.",
     "free_title": "Kostenlos nutzbar",
-    "free_desc": "Kein Abo erforderlich. Keine Paywall f\u00fcr Kernfunktionen. Dies ist ein Herzensprojekt, gebaut von jemandem, der es t\u00e4glich nutzt \u2014 kein risikokapitalfinanziertes Startup, das dein Geld will."
+    "free_desc": "Kein Abo erforderlich. Keine Paywall für Kernfunktionen. Dies ist ein Herzensprojekt, gebaut von jemandem, der es täglich nutzt — kein risikokapitalfinanziertes Startup, das dein Geld will."
+  },
+  "screens": {
+    "label": "Screens",
+    "title": "So sieht's aus.",
+    "desc": "Direkt aus dem App-Store-Eintrag."
   },
   "how": {
     "label": "So funktioniert's",
@@ -49,7 +54,7 @@
     "step1_title": "Profil konfigurieren",
     "step1_desc": "Lege deine Erfahrungsstufe, dein Hauptziel (Kraft, Hypertrophie oder Ausdauer), Trainingshäufigkeit pro Woche, Einheitsdauer und verfügbare Ausstattung fest. Dauert etwa eine Minute.",
     "step2_title": "Generieren oder selbst erstellen",
-    "step2_desc": "Nutze Smart Rotation, um automatisch einen Wochenplan zu generieren, oder erstelle eigene Vorlagen. So oder so — drück einfach auf \u201ETraining starten\u201C, wenn du bereit bist.",
+    "step2_desc": "Nutze Smart Rotation, um automatisch einen Wochenplan zu generieren, oder erstelle eigene Vorlagen. So oder so — drück einfach auf „Training starten“, wenn du bereit bist.",
     "step3_title": "Loggen und Fortschritte machen",
     "step3_desc": "Tracke jeden Satz während deiner Einheit. Logge deine Wiederholungen in Reserve (RIR). Beobachte, wie deine Kraftkurven steigen. Je mehr Daten du eingibst, desto intelligenter werden deine Workouts."
   },
@@ -57,49 +62,50 @@
     "label": "Warum es das gibt",
     "title": "Aus Frust entstanden.",
     "p1": "Ich wollte eine konsequente Trainingsroutine aufbauen. Also habe ich die Apps ausprobiert, die alle empfehlen. Alle wollten <strong>$15 bis $30 pro Monat</strong> — nur um Sätze und Wiederholungen zu loggen.",
-    "p2": "Ich bin Entwickler. Also habe ich meine eigene gebaut. <strong>Fit Project begann als persönliches Tool</strong> — etwas, das ich jeden einzelnen Tag im Gym benutze. Es tut genau das, was ich brauchte: Workouts schnell loggen, meinen Fortschritt über die Zeit verfolgen und intelligente Routinen generieren, basierend auf dem, was ich tatsächlich gemacht habe.",
-    "p3": "Jetzt stelle ich es f\u00fcr alle bereit, die dasselbe wollen. <strong>Kein Risikokapital. Keine Paywall f\u00fcr Kernfunktionen.</strong> Einfach eine Workout-App, gebaut von jemandem, der trainiert."
+    "p2": "Ich bin Entwickler. Also habe ich meine eigene gebaut. <strong>FitProject begann als persönliches Tool</strong> — etwas, das ich jeden einzelnen Tag im Gym benutze. Es tut genau das, was ich brauchte: Workouts schnell loggen, meinen Fortschritt über die Zeit verfolgen und intelligente Routinen generieren, basierend auf dem, was ich tatsächlich gemacht habe.",
+    "p3": "Jetzt stelle ich es für alle bereit, die dasselbe wollen. <strong>Kein Risikokapital. Keine Paywall für Kernfunktionen.</strong> Einfach eine Workout-App, gebaut von jemandem, der trainiert."
   },
   "faq": {
     "label": "FAQ",
     "title": "Häufige Fragen",
     "desc": "Klare Antworten.",
-    "q1": "Ist Fit Project wirklich kostenlos?",
-    "a1": "Ja. Fit Project ist kostenlos nutzbar \u2014 kein Abo, keine Paywall f\u00fcr Kernfunktionen. Es wurde als Herzensprojekt von einem Entwickler gebaut, der es leid war, monatliche Geb\u00fchren f\u00fcrs Trainings-Loggen zu zahlen. Das Trainings-Logbuch und die intelligente Generierung, die du heute siehst, sind kostenlos, und das Ziel ist, das so beizubehalten.",
+    "q1": "Ist FitProject wirklich kostenlos?",
+    "a1": "Ja. FitProject ist kostenlos nutzbar — kein Abo, keine Paywall für Kernfunktionen. Es wurde als Herzensprojekt von einem Entwickler gebaut, der es leid war, monatliche Gebühren fürs Trainings-Loggen zu zahlen. Das Trainings-Logbuch und die intelligente Generierung, die du heute siehst, sind kostenlos, und das Ziel ist, das so beizubehalten.",
     "q2": "Wie funktioniert Smart Rotation?",
-    "a2": "Smart Rotation erstellt deinen wöchentlichen Trainingsplan basierend auf deinen Profileinstellungen — Erfahrungsstufe, Hauptziel, verfügbare Ausstattung, Trainingshäufigkeit pro Woche (2–7 Tage) und Einheitsdauer (15–120 Minuten). Es erstellt einen ausgewogenen Split (Push, Pull, Unterkörper usw.) und rotiert durch diesen, unter Berücksichtigung der zuletzt trainierten Muskelgruppen und deiner Progression über die Zeit.",
+    "a2": "Smart Rotation erstellt deinen wöchentlichen Trainingsplan basierend auf deinen Profileinstellungen — Erfahrungsstufe, Hauptziel, verfügbare Ausstattung, Trainingshäufigkeit pro Woche (2–7 Tage) und Einheitsdauer (15–120 Minuten). Es erstellt einen ausgewogenen Split (Push, Pull, Unterkörper usw.) und rotiert durch diesen, unter Berücksichtigung der zuletzt trainierten Muskelgruppen und deiner Progression über die Zeit. Es ist eine regelbasierte Engine, die komplett auf deinem Handy läuft — gleiche Eingaben, gleiches Workout. Keine KI, keine Blackbox.",
     "q3": "Was kann ich während eines Trainings tracken?",
     "a3": "Für jede Übung kannst du Sätze (einschließlich Aufwärmsätze), Wiederholungen, Gewicht und Pausenzeiten erfassen. Nach Abschluss einer Übung bewertest du deine Anstrengung mit Wiederholungen in Reserve (RIR). Die App trackt außerdem deine Gesamtdauer, das Gesamtvolumen, persönliche Rekorde und zeigt die Entwicklung deiner Kraftkurven über die Zeit.",
     "q4": "Welche Daten werden erfasst?",
-    "a4": "Fit Project stellt Datenschutz an erste Stelle. Deine Trainingsdaten werden niemals an Werbetreibende verkauft oder mit Dritten geteilt. Deine Fitnessdaten geh\u00f6ren dir allein.",
+    "a4": "FitProject stellt Datenschutz an erste Stelle. Deine Trainingsdaten werden niemals an Werbetreibende verkauft oder mit Dritten geteilt. Deine Fitnessdaten gehören dir allein.",
     "q5": "Kann ich eigene Workouts statt der generierten verwenden?",
     "a5": "Absolut. Du kannst eigene Trainingsvorlagen erstellen, abgeschlossene Workouts als Vorlagen speichern und deine eigene Wochenroutine von Grund auf zusammenstellen. Smart Rotation ist da, wenn du sie brauchst, aber du bist nie darauf festgelegt.",
     "q6": "Welche Geräte werden unterstützt?",
-    "a6": "Fit Project unterstützt Bank, Langhantel (mit Scheiben-Konfiguration), Kurzhanteln (mit individuellen Gewichtsbereichen), Kettlebells, Kabelzüge, Klimmzugstange und mehr. Du aktivierst, was du hast, gibst Details wie deinen Kurzhantel-Bereich an, und die App generiert nur Workouts mit Geräten, die dir zur Verfügung stehen.",
-    "q7": "Auf welchen Plattformen ist Fit Project verfügbar?",
-    "a7": "Fit Project erscheint auf iOS (App Store) und Android (Google Play). Beide Versionen sind komplett kostenlos."
+    "a6": "FitProject unterstützt Bank, Langhantel (mit Scheiben-Konfiguration), Kurzhanteln (mit individuellen Gewichtsbereichen), Kettlebells, Kabelzüge, Klimmzugstange und mehr. Du aktivierst, was du hast, gibst Details wie deinen Kurzhantel-Bereich an, und die App generiert nur Workouts mit Geräten, die dir zur Verfügung stehen.",
+    "q7": "Auf welchen Plattformen ist FitProject verfügbar?",
+    "a7": "FitProject ist ab sofort für iOS im App Store verfügbar. Die Android-Version ist noch nicht erschienen. Die App ist kostenlos, die Oberfläche gibt es auf Englisch und Französisch."
   },
   "cta": {
     "title": "Starte dein <span class='highlight'>Fitness</span>-Projekt.",
-    "desc": "Kostenlos auf iOS und Android. Kein Konto erforderlich, um loszulegen.",
+    "desc": "Kostenlos für iOS. Android folgt bald. Kein Konto erforderlich, um loszulegen.",
+    "appstore_pre": "Laden im",
     "appstore": "App Store",
-    "googleplay": "Google Play"
+    "googleplay": "Android folgt bald"
   },
   "footer": {
-    "copy": "\u00a9 2026 Fit Project. Gebaut von jemandem, der trainiert.",
+    "copy": "© 2026 FitProject. Gebaut von jemandem, der trainiert.",
     "privacy": "Datenschutzerklärung",
     "support": "Support",
     "contact": "Kontakt"
   },
   "support": {
-    "meta_title": "Support — Fit Project",
-    "meta_description": "Hilfe zu Fit Project. Echte Antworten von einem echten Entwickler.",
-    "og_title": "Fit Project Support",
-    "og_description": "Brauchst du Hilfe mit Fit Project? Schreib uns — wir antworten.",
-    "twitter_title": "Fit Project Support",
-    "twitter_description": "Brauchst du Hilfe mit Fit Project? Schreib uns — wir antworten.",
+    "meta_title": "Support — FitProject",
+    "meta_description": "Hilfe zu FitProject. Echte Antworten von einem echten Entwickler.",
+    "og_title": "FitProject Support",
+    "og_description": "Brauchst du Hilfe mit FitProject? Schreib uns — wir antworten.",
+    "twitter_title": "FitProject Support",
+    "twitter_description": "Brauchst du Hilfe mit FitProject? Schreib uns — wir antworten.",
     "title": "Brauchst du Hilfe?",
-    "intro": "Fit Project ist ein kleines, unabhängiges Projekt — gebaut und betreut von einem einzelnen Entwickler, der die App täglich nutzt. Schreib uns, und du bekommst eine echte Antwort von einem echten Menschen, nicht von einem Ticket-Bot.",
+    "intro": "FitProject ist ein kleines, unabhängiges Projekt — gebaut und betreut von einem einzelnen Entwickler, der die App täglich nutzt. Schreib uns, und du bekommst eine echte Antwort von einem echten Menschen, nicht von einem Ticket-Bot.",
     "email_label": "Support-E-Mail",
     "email_button": "E-Mail senden",
     "reply_time": "Ich bin Solo-Entwickler, daher variieren die Antwortzeiten — aber ich lese jede Nachricht und melde mich so schnell wie möglich zurück.",
@@ -109,27 +115,27 @@
     "include_3": "Eine kurze Beschreibung dessen, was passiert ist und was du erwartet hast",
     "quick_title": "Schnelle Antworten",
     "quick_link": "Vollständige FAQ ansehen",
-    "quick_q1": "Ist Fit Project wirklich kostenlos?",
+    "quick_q1": "Ist FitProject wirklich kostenlos?",
     "quick_q2": "Wie funktioniert Smart Rotation?",
     "quick_q3": "Welche Daten werden erfasst?",
     "back": "← Zurück zur Startseite"
   },
   "privacy": {
-    "meta_title": "Datenschutzerklärung — Fit Project",
-    "meta_description": "Fit Project erfasst und teilt keine deiner Daten. Lies die vollständige Datenschutzerklärung.",
-    "og_title": "Datenschutzerklärung von Fit Project",
+    "meta_title": "Datenschutzerklärung — FitProject",
+    "meta_description": "FitProject erfasst und teilt keine deiner Daten. Lies die vollständige Datenschutzerklärung.",
+    "og_title": "Datenschutzerklärung von FitProject",
     "og_description": "Keine Datenerfassung. Keine Dritten. Lies die Erklärung.",
-    "twitter_title": "Datenschutzerklärung von Fit Project",
+    "twitter_title": "Datenschutzerklärung von FitProject",
     "twitter_description": "Keine Datenerfassung. Keine Dritten. Lies die Erklärung.",
     "title": "Datenschutzerklärung",
     "updated": "Zuletzt aktualisiert: 2026-05-11",
     "summary_label": "Kurzfassung",
-    "summary": "Fit Project erfasst, speichert und teilt keine deiner Daten. Alles bleibt auf deinem Gerät.",
+    "summary": "FitProject erfasst, speichert und teilt keine deiner Daten. Alles bleibt auf deinem Gerät.",
     "s1_title": "1. Wer wir sind",
-    "s1_body": "Fit Project ist eine unabhängige App, gebaut und betrieben von einem einzelnen Entwickler. Kontakt: support@fitproject.app",
+    "s1_body": "FitProject ist eine unabhängige App, gebaut und betrieben von einem einzelnen Entwickler. Kontakt: support@fitproject.app",
     "s2_title": "2. Daten, die wir erfassen",
     "s2_p1": "Keine. Alle Trainingsdaten — Übungen, Sätze, Wiederholungen, Gewicht, Pausenzeiten, RIR, Geräte-Konfiguration und dein Profil (Erfahrungsstufe, Ziel, Häufigkeit, Einheitsdauer) — werden ausschließlich auf deinem Gerät gespeichert. Wir haben keinen Server, keine Kopie und keinen Zugriff darauf.",
-    "s2_p2": "Fit Project erfordert kein Konto. Wir erfassen weder deinen Namen, deine E-Mail-Adresse noch irgendeinen Identifikator. Wir erfassen keine Geräte-IDs, Nutzungsstatistiken, Crash-Reports oder Telemetriedaten. In der App ist kein Drittanbieter-SDK für Tracking, Werbung oder Analytics enthalten.",
+    "s2_p2": "FitProject erfordert kein Konto. Wir erfassen weder deinen Namen, deine E-Mail-Adresse noch irgendeinen Identifikator. Wir erfassen keine Geräte-IDs, Nutzungsstatistiken, Crash-Reports oder Telemetriedaten. In der App ist kein Drittanbieter-SDK für Tracking, Werbung oder Analytics enthalten.",
     "s3_title": "3. Wie deine Daten verwendet werden",
     "s3_body": "Deine Trainingsdaten werden von der App auf deinem Gerät genutzt, um deine Trainingshistorie anzuzeigen, Routinen über Smart Rotation zu generieren und deinen Fortschritt zu verfolgen. Nichts davon verlässt dein Gerät.",
     "s4_title": "4. Weitergabe an Dritte",
@@ -139,7 +145,7 @@
     "s6_title": "6. Deine Rechte",
     "s6_body": "Da wir keine deiner Daten besitzen, können wir nichts in deinem Namen einsehen, korrigieren oder löschen — du behältst die volle Kontrolle über deine Daten auf deinem Gerät. Wenn du in der EU/UK lebst, hast du Rechte gemäß DSGVO/UK GDPR; in Kalifornien gemäß CCPA. Schreib bei Datenschutzfragen an support@fitproject.app.",
     "s7_title": "7. Kinder",
-    "s7_body": "Fit Project richtet sich nicht an Kinder unter 13 Jahren (oder 16 in der EU). Wir erfassen wissentlich keine Daten von Kindern — und gemäß der oben genannten Richtlinie erfassen wir ohnehin keine Daten von irgendjemandem.",
+    "s7_body": "FitProject richtet sich nicht an Kinder unter 13 Jahren (oder 16 in der EU). Wir erfassen wissentlich keine Daten von Kindern — und gemäß der oben genannten Richtlinie erfassen wir ohnehin keine Daten von irgendjemandem.",
     "s8_title": "8. Änderungen dieser Erklärung",
     "s8_body": "Falls wir diese Erklärung wesentlich ändern (zum Beispiel, wenn wir irgendwann Cloud-Sync hinzufügen), aktualisieren wir das Datum unter „Zuletzt aktualisiert\" und benachrichtigen Nutzer dort, wo es erforderlich ist, in der App.",
     "s9_title": "9. Kontakt",

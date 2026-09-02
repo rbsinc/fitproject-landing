@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://fitproject.app/</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://fitproject.app/"/>
@@ -15,7 +15,7 @@
   </url>
   <url>
     <loc>https://fitproject.app/?lang=es</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://fitproject.app/"/>
@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://fitproject.app/?lang=pt</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://fitproject.app/"/>
@@ -39,7 +39,7 @@
   </url>
   <url>
     <loc>https://fitproject.app/?lang=fr</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://fitproject.app/"/>
@@ -51,7 +51,7 @@
   </url>
   <url>
     <loc>https://fitproject.app/?lang=de</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://fitproject.app/"/>
@@ -63,7 +63,7 @@
   </url>
   <url>
     <loc>https://fitproject.app/support</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://fitproject.app/support"/>
@@ -75,7 +75,7 @@
   </url>
   <url>
     <loc>https://fitproject.app/privacy</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://fitproject.app/privacy"/>
